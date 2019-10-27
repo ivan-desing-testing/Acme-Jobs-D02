@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- sample-data.xml
+-
+- Copyright (c) 2019 Rafael Corchuelo.
+-
+- In keeping with the traditional purpose of furthering education and research, it is
+- the policy of the copyright owner to permit non-commercial use and redistribution of
+- this software. It has been tested carefully, but it is not guaranteed for any particular
+- purposes.  The copyright owner does not offer any warranties or representations, nor do
+- they accept any liabilities with respect to them.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+
+	<!-- Shouts -->
+	<bean id="shout01" class ="acme.entities.shouts.Shout">
+		<property name ="author" value="John Does"/>
+		<property name ="text" value="I'm happy"/>
+		<property name ="moment" value="2019/09/09 10:00"/>
+	</bean>
+	
+	<bean id="shout02" class ="acme.entities.shouts.Shout">
+		<property name ="author" value="Jane Doe"/>
+		<property name ="text" value="I'm the master of my room"/>
+		<property name ="moment" value="2019/08/09 15:55"/>
+	</bean>
+	
+	<bean id="shout03" class ="acme.entities.shouts.Shout">
+		<property name ="author" value="Foo Bar"/>
+		<property name ="text" value="Just turning 20!"/>
+		<property name ="moment" value="2019/09/07 00:00"/>
+	</bean>
+  
+	<!-- ChellikBulletins -->
+  
+	<bean id="chellikBulletin21" class ="acme.entities.chellikBulletin.ChellikBulletin">
+		<property name ="nombre" value="Pipito"/>
+		<property name ="apellido" value="mmmmmmm"/>
+		<property name ="role" value="developer"/>
+		<property name ="fecha" value="2019/08/01 00:00"/>
+		
+	</bean>
+	
+	<bean id="chellikBulletin22" class ="acme.entities.chellikBulletin.ChellikBulletin">
+		<property name ="nombre" value="abbbbde"/>
+		<property name ="apellido" value="chell"/>
+		<property name ="role" value="architect"/>
+		<property name ="fecha" value="2019/07/04 00:00"/>
+	</bean>
+	
+	<bean id="chellikBulletin13" class ="acme.entities.chellikBulletin.ChellikBulletin">
+		<property name ="nombre" value="jose"/>
+		<property name ="apellido" value="avvvv"/>
+		<property name ="role" value="analist"/>
+		<property name ="fecha" value="2019/11/03 11:00"/>
+	</bean>
+
+	<!-- AlferezBulletins -->
+	<bean id="alferez01" class ="acme.entities.alferezBulletin.AlferezBulletin">
+		<property name ="author" value="Foo Bar"/>
+		<property name ="url" value="https://github.com/ivan-desing-testing/Acme-Jobs/projects/1"/>
+		<property name ="type" value="Others"/>
+		<property name ="moment" value="2019/09/07 00:00"/>
+	</bean>
+
+	<!-- EscobarBulletins -->
+	<bean id="escobarBulletin01" class ="acme.entities.escobarBulletin.EscobarBulletin">
+		<property name ="author" value="John Does"/>
+		<property name ="text" value="I'm happy"/>
+		<property name ="moment" value="2019/09/09 10:00"/>
+		<property name ="birthdate" value="1996/06/10 00:00"/>
+		<property name ="level" value="University Degree (Grado Univ.)"/>
+	</bean>
+	
+	<bean id="escobarBulletin02" class ="acme.entities.escobarBulletin.EscobarBulletin">
+		<property name ="author" value="Jane Doe"/>
+		<property name ="text" value="I'm the master of my room"/>
+		<property name ="moment" value="2019/08/09 15:55"/>
+		<property name ="birthdate" value="1997/09/27 00:00"/>
+		<property name ="level" value="High School (Bachillerato)"/>
+	</bean>
+	
+	<bean id="escobarBulletin03" class ="acme.entities.escobarBulletin.EscobarBulletin">
+		<property name ="author" value="Foo Bar"/>
+		<property name ="text" value="Just turning 20!"/>
+		<property name ="moment" value="2019/09/07 00:00"/>
+		<property name ="birthdate" value="1999/11/18 00:00"/>
+		<property name ="level" value="Middle School (Secundaria)"/>
+	</bean>
+  
+  <!-- RBulletins -->
+  
+  <bean id="RBulletin01" class ="acme.entities.rosadoBulletin.RosadoBulletin">
+		<property name ="name" value="Antonio"/>
+		<property name ="image" value="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg"/>
+		<property name ="video" value="https://www.youtube.com/watch?v=dQw4w9WgXcQ"/>
+	</bean>
+	
+	<bean id="RBulletin02" class ="acme.entities.rosadoBulletin.RosadoBulletin">
+		<property name ="name" value="Juan"/>
+		<property name ="image" value="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg"/>
+		<property name ="video" value="https://www.youtube.com/watch?v=anzzNp8HlVQ"/>
+	</bean>
+	
+	<bean id="RBulletin03" class ="acme.entities.rosadoBulletin.RosadoBulletin">
+		<property name ="name" value="Paco"/>
+		<property name ="image" value="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg"/>
+		<property name ="video" value="https://www.youtube.com/watch?v=fJ9rUzIMcZQ"/>
+	</bean>
+
+	<bean id="cardenasBulletin01" class ="acme.entities.cardenasBulletin.CardenasBulletin">
+		<property name ="book" value="La Comunidad del Anillo"/>
+		<property name ="author" value="J.R.R Tolkien"/>
+		<property name ="genre" value="Fantasía"/>
+		<property name ="isbn" value="7312310239"/>
+	</bean>
+	
+	<bean id="cardenasBulletin02" class ="acme.entities.cardenasBulletin.CardenasBulletin">
+		<property name ="book" value="Las Dos Torres"/>
+		<property name ="author" value="J.R.R Tolkien"/>
+		<property name ="genre" value="Fantasía"/>
+		<property name ="isbn" value="801123412"/>
+	</bean>
+	
+	<bean id="cardenasBulletin03" class ="acme.entities.cardenasBulletin.CardenasBulletin">
+		<property name ="book" value="The Final Empire"/>
+		<property name ="author" value="Brandon Sanderson"/>
+		<property name ="genre" value="Fantasía"/>
+		<property name ="isbn" value="134523452"/>
+	</bean>
+
+</beans>
