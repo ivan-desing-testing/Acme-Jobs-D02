@@ -319,4 +319,20 @@ Offer
 bg=pink</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>336</x>
+      <y>140</y>
+      <w>161</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Announcement
+--
++ title: String{NotBlank}
++ moment: Date{Temporal(TIME)}
++ moreInfo: String{URL}
++ text: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
