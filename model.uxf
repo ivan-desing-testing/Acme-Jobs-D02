@@ -322,8 +322,8 @@ bg=pink</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>245</x>
-      <y>294</y>
+      <x>252</x>
+      <y>364</y>
       <w>175</w>
       <h>140</h>
     </coordinates>
