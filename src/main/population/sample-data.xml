@@ -54,5 +54,24 @@
 		<property name="incorporated" value="0"/>
 		<property name="starScore" value="2.5"/>
 	</bean>
+	
+   <bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 01"/>
+		<property name="moment" value="2019/06/10  10:22"/>
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="text" value=" my text"/>
+	</bean>
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 02"/>
+		<property name="moment" value="2008/06/10  00:22"/>
+		<property name="moreInfo" value="http://www.example.com"/>
+		<property name="text" value=" my text"/>
+	</bean>
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 03"/>
+		<property name="moment" value="2012/06/10  11:22"/>
+		<property name="moreInfo" value="http://www.example.com"/> 
+		<property name="text" value="my text"/>
+	</bean>
 
 </beans>
