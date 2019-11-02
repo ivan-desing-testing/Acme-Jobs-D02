@@ -63,6 +63,11 @@ master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Authenticated
+master.menu.authenticated.requests = Requests
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider

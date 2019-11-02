@@ -75,7 +75,40 @@
 		<property name="moreInfo" value="http://www.expample.com"/>
 		<property name="text" value="This is a very old announcement"/>
 	</bean>
+  
+  <!-- Requests -->
 	
+	<bean id="request01" class="acme.entities.requests.Requests">
+		<property name="title" value="Request 01"/>
+		<property name="creation" value="2019/06/10 10:35"/>
+		<property name="deadline" value="2021/06/11 00:00"/>
+		<property name="text" value="This is the description of a request"/>
+		<property name="reward">
+			<ref bean="money01"/>
+		</property>
+		<property name="ticker" value="RAAAA-00000"/>
+	</bean>
 	
-
+	<bean id="request02" class="acme.entities.requests.Requests">
+		<property name="title" value="Request 02"/>
+		<property name="creation" value="2017/03/27 14:58"/>
+		<property name="deadline" value="2021/10/06 00:00"/>
+		<property name="text" value="This is the description of another request"/>
+		<property name="reward">
+			<ref bean="money02"/>
+		</property>
+		<property name="ticker" value="RAAAB-00001"/>
+	</bean>
+	
+	<bean id="request03" class="acme.entities.requests.Requests">
+		<property name="title" value="Request 03"/>
+		<property name="creation" value="2018/12/31 23:13"/>
+		<property name="deadline" value="2021/01/01 00:00"/>
+		<property name="text" value="This is the description of the third request"/>
+		<property name="reward">
+			<ref bean="money03"/>
+		</property>
+		<property name="ticker" value="RAAAC-00002"/>
+	</bean>
+	
 </beans>
