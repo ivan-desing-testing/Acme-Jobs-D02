@@ -1,0 +1,12 @@
+authenticated.offer.form.label.title = Título: 
+authenticated.offer.form.label.creation = Fecha de Creación: 
+authenticated.offer.form.label.deadline = Fecha Límite: 
+authenticated.offer.form.label.text = Texto: 
+authenticated.offer.form.label.rewardMin = Recompensa Mínima: 
+authenticated.offer.form.label.rewardMax = Recompensa Máxima: 
+authenticated.offer.form.label.ticker = Ticker: 
+authenticated.offer.form.button.return = Volver
+
+authenticated.offer.list.label.title = Título
+authenticated.offer.list.label.creation = Fecha de Creación
+authenticated.offer.list.label.deadline = Fecha Límite

@@ -55,4 +55,8 @@ public class Money extends DomainDatatype {
 		return result.toString();
 	}
 
+	public Double amount() {
+		return this.amount;
+	}
+
 }
