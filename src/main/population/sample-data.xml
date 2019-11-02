@@ -17,42 +17,26 @@
 
 	<import resource="conversion-service.xml" />
 
-	<!-- Offers -->
-	
-	<bean id="offer01" class="acme.entities.offers.Offer">
-		<property name="companyName" value="Acme-Jobs"/>
-		<property name="sector" value="Services"/>
-		<property name="CEOName" value="Rafael Corchuelo Gil"/>
-		<property name="activitiesDescription" value="Dedicated to help you find your desired job"/>
-		<property name="website" value="http://www.lsi.us.es/"/>
-		<property name="contactPhone" value="+42 (4201) 123456789"/>
-		<property name="contactEmail" value="rafaelcorchuelo@us.es"/>
-		<property name="incorporated" value="1"/>
-		<property name="starScore" value="5"/>
-	</bean>
-	
-	<bean id="offer02" class="acme.entities.offers.Offer">
-		<property name="companyName" value="Astiglass"/>
-		<property name="sector" value="Vidrio"/>
-		<property name="CEOName" value="Lorenzo Aliaga"/>
-		<property name="activitiesDescription" value="50 años de experiencia, esfuerzo e innovación, logran un aumento de la productividad y de la calidad de nuestros productos, situando actualmente a ASTIGLASS en un referente en el sector del vidrio."/>
-		<property name="website" value="http://www.astiglass.com/"/>
-		<property name="contactPhone" value="+42 (4201) 955901234"/>
-		<property name="contactEmail" value="info@astiglass.com"/>
-		<property name="incorporated" value="1"/>
-		<property name="starScore" value="4.5"/>
-	</bean>
-	
-	<bean id="offer03" class="acme.entities.offers.Offer">
-		<property name="companyName" value="Startup company"/>
-		<property name="sector" value="Robotics"/>
-		<property name="CEOName" value="John Smith"/>
-		<property name="activitiesDescription" value="Brand new company dedicated to artificial intelligence and robotics"/>
-		<property name="website" value="https://www.enterprisedigi.com/artificial-intelligence-machine-learning"/>
-		<property name="contactPhone" value="+20 (0012) 7561234"/>
-		<property name="contactEmail" value="startupcompany@gmail.com"/>
-		<property name="incorporated" value="0"/>
-		<property name="starScore" value="2.5"/>
-	</bean>
 
-</beans>
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="A test"/>
+		<property name="moment" value="2019/06/10 0:00"/>
+		<property name="text" value="What's up"/>
+		<property name="moreInfo" value="http://www.lsi.us.es/"/>	
+	</bean>
+	
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+		<property name="title" value="An announcement"/>
+		<property name="moment" value="2019/06/10 0:00"/>
+		<property name="text" value="Franco is dead"/>
+		<property name="moreInfo" value="http://www.lsi.us.es/"/>	
+	</bean>
+	
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Big News"/>
+		<property name="moment" value="2019/06/10 0:00"/>
+		<property name="text" value="Something's happened"/>
+		<property name="moreInfo" value="http://www.lsi.us.es/"/>	
+	</bean>
+	
+</beans>	
