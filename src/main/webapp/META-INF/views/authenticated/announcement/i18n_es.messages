@@ -1,4 +1,4 @@
-# README.txt
+# i18n_es.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
 #
@@ -8,7 +8,11 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-This is the Starter-Project project, which is intended to be a core learning asset for the students
-who have enroled the Design and Testing subject of the Software Engineering curriculum of the 
-University of Sevilla.  This project provides a template our students can use to get their projects 
-up and running very quickly.
+authenticated.announcement.form.label.title=Titulo:
+authenticated.announcement.form.label.moment=Momento:
+authenticated.announcement.form.label.moreInfo=Mas Informacion:
+authenticated.announcement.form.label.text:Texto:
+authenticated.announcement.form.button.return = Return
+
+authenticated.announcement.list.label.title =Titulo
+authenticated.announcement.list.label.moment=Momento

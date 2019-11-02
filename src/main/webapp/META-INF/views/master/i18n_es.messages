@@ -52,6 +52,10 @@ master.menu.anonymous.alferez-bulletin.create = Crear AlferezBulletin
 master.menu.anonymous.escobar-bulletin.list = Lista de EscobarBulletins
 master.menu.anonymous.escobar-bulletin.create = Nuevo EscobarBulletin
 
+# master.menu.authenticated ###################################################
+master.menu.authenticated= Autentificado
+master.menu.authenticated.announcement.list= Anuncios
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador

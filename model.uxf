@@ -4,6 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
+
       <x>245</x>
       <y>350</y>
       <w>147</w>
@@ -333,6 +334,7 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
+
       <x>189</x>
       <y>266</y>
       <w>224</w>
@@ -350,23 +352,31 @@ Shout
     <id>UMLClass</id>
     <coordinates>
       <x>420</x>
+      <x>0</x>
+
       <y>350</y>
-      <w>224</w>
-      <h>105</h>
+      <w>189</w>
+      <h>133</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
-EscobarBulletin
+Offer
 --
-+ moment: Date {Temporal(TIMESTAMP), Past}
-+ author: String {NotBlank}
-+ birthdate: Date {Temporal(DATE), Past}
-+ level: String {NotBlank}
-+ text: String {NotBlank}</panel_attributes>
++ companyName: String {NotBlank}
++ sector: String {NotBlank}
++ CEOName: String {NotBlank}
++ activitiesDescription: String {NotBlank}
++ website: String {URL}
++ contactPhone: String {NotBlank}
++ contactEmail: String {NotBlank}
++ incorporated: boolean
++ starScore: Double
+bg=pink</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
+
       <x>0</x>
       <y>350</y>
       <w>224</w>
@@ -388,18 +398,19 @@ CardenasBulletin
       <y>462</y>
       <w>224</w>
       <h>91</h>
+
+      <x>336</x>
+      <y>140</y>
+      <w>161</w>
+      <h>70</h>
+
     </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-AlferezBulletin
+    <panel_attributes>Announcement
 --
-+ moment: Date {Temporal(TIMESTAMP), Past}
-+ author: String {NotBlank}
-+ type: String {NotBlank}
-+ url: String {NotBlank}
-
-bg=yellow
-
-      </panel_attributes>
++ title: String{NotBlank}
++ moment: Date{Temporal(TIME)}
++ moreInfo: String{URL}
++ text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
