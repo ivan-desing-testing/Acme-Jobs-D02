@@ -20,40 +20,71 @@
 	<!-- Offers -->
 	
 	<bean id="offer01" class="acme.entities.offers.Offer">
-		<property name="companyName" value="Acme-Jobs"/>
-		<property name="sector" value="Services"/>
-		<property name="CEOName" value="Rafael Corchuelo Gil"/>
-		<property name="activitiesDescription" value="Dedicated to help you find your desired job"/>
-		<property name="website" value="http://www.lsi.us.es/"/>
-		<property name="contactPhone" value="+42 (4201) 123456789"/>
-		<property name="contactEmail" value="rafaelcorchuelo@us.es"/>
-		<property name="incorporated" value="1"/>
-		<property name="starScore" value="5"/>
+		<property name="title" value="Offer 01"/>
+		<property name="creation" value="2019/06/10 10:35"/>
+		<property name="deadline" value="2021/06/11 00:00"/>
+		<property name="text" value="This is the description of an offer"/>
+		<property name="rewardMin">
+			<ref bean="money02"/>
+		</property>
+		<property name="rewardMax">
+			<ref bean="money01"/>
+		</property>
+		<property name="ticker" value="OAAAA-00000"/>
 	</bean>
 	
 	<bean id="offer02" class="acme.entities.offers.Offer">
-		<property name="companyName" value="Astiglass"/>
-		<property name="sector" value="Vidrio"/>
-		<property name="CEOName" value="Lorenzo Aliaga"/>
-		<property name="activitiesDescription" value="50 años de experiencia, esfuerzo e innovación, logran un aumento de la productividad y de la calidad de nuestros productos, situando actualmente a ASTIGLASS en un referente en el sector del vidrio."/>
-		<property name="website" value="http://www.astiglass.com/"/>
-		<property name="contactPhone" value="+42 (4201) 955901234"/>
-		<property name="contactEmail" value="info@astiglass.com"/>
-		<property name="incorporated" value="1"/>
-		<property name="starScore" value="4.5"/>
+		<property name="title" value="Offer 02"/>
+		<property name="creation" value="2017/03/27 14:58"/>
+		<property name="deadline" value="2021/10/06 00:00"/>
+		<property name="text" value="This is the description of another offer"/>
+		<property name="rewardMin">
+			<ref bean="money02"/>
+		</property>
+		<property name="rewardMax">
+			<ref bean="money03"/>
+		</property>
+		<property name="ticker" value="OAAAB-00001"/>
 	</bean>
 	
 	<bean id="offer03" class="acme.entities.offers.Offer">
-		<property name="companyName" value="Startup company"/>
-		<property name="sector" value="Robotics"/>
-		<property name="CEOName" value="John Smith"/>
-		<property name="activitiesDescription" value="Brand new company dedicated to artificial intelligence and robotics"/>
-		<property name="website" value="https://www.enterprisedigi.com/artificial-intelligence-machine-learning"/>
-		<property name="contactPhone" value="+20 (0012) 7561234"/>
-		<property name="contactEmail" value="startupcompany@gmail.com"/>
-		<property name="incorporated" value="0"/>
-		<property name="starScore" value="2.5"/>
+		<property name="title" value="Offer 03"/>
+		<property name="creation" value="2018/12/31 23:13"/>
+		<property name="deadline" value="2021/01/01 00:00"/>
+		<property name="text" value="This is the description of the third offer"/>
+		<property name="rewardMin">
+			<ref bean="money01"/>
+		</property>
+		<property name="rewardMax">
+			<ref bean="money03"/>
+		</property>
+		<property name="ticker" value="OAAAC-00002"/>
 	</bean>
+	
+	<!-- Money -->
+	
+	<bean id="money01" class="acme.framework.datatypes.Money">
+		<property name="amount" value="1000.00"/>
+		<property name="currency" value="€"/>
+	</bean>
+	
+	<bean id="money02" class="acme.framework.datatypes.Money">
+		<property name="amount" value="850.00"/>
+		<property name="currency" value="€"/>
+	</bean>
+	
+	<bean id="money03" class="acme.framework.datatypes.Money">
+		<property name="amount" value="1200.00"/>
+		<property name="currency" value="€"/>
+	</bean>
+  
+	<!-- ChellikBulletins -->
+  
+	<bean id="chellikBulletin21" class ="acme.entities.chellikBulletin.ChellikBulletin">
+		<property name ="nombre" value="Pipito"/>
+		<property name ="apellido" value="mmmmmmm"/>
+		<property name ="role" value="developer"/>
+		<property name ="fecha" value="2019/08/01 00:00"/>
 	
 	<bean id="announcement01" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 01"/>

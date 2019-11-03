@@ -4,6 +4,26 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
+      <x>462</x>
+      <y>469</y>
+      <w>224</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Offer
+--
++ title: String {NotNull}
++ creation: Date {Temporal(DATE), Past}
++ deadline: Date {Temporal(DATE), Future}
++ text: String {NotNull}
++ rewardMin: Money {NotNull, Valid}
++ rewardMax: Money {NotNull, Valid}
++ ticker: String {Unique, NotNull}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
 
       <x>245</x>
       <y>350</y>

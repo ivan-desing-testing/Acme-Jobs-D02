@@ -15,18 +15,14 @@ import acme.framework.services.AbstractListService;
 @Service
 public class AuthenticatedOfferListService implements AbstractListService<Authenticated, Offer> {
 
-	// Internal state --------------------------------------------------------------------------
-
 	@Autowired
 	AuthenticatedOfferRepository repository;
-
 
 	// AbstractListService<Authenticated, Offer> interface -------------------------------------
 
 	@Override
 	public boolean authorise(final Request<Offer> request) {
 		assert request != null;
-
 		return true;
 	}
 
@@ -35,12 +31,12 @@ public class AuthenticatedOfferListService implements AbstractListService<Authen
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-
-		request.unbind(entity, model, "moment", "title");
+    	request.unbind(entity, model, "title", "creation", "deadline");
 	}
 
 	@Override
 	public Collection<Offer> findMany(final Request<Offer> request) {
+
 		assert request != null;
 
 		Collection<Offer> result;

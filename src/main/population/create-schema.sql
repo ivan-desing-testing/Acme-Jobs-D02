@@ -1,5 +1,4 @@
-
-    create table `administrator` (
+   create table `administrator` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
@@ -47,6 +46,21 @@
         `book` varchar(255),
         `genre` varchar(255),
         `isbn` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+    
+    create table `offer` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation` datetime(6),
+        `deadline` datetime(6),
+        `reward_max_amount` double precision,
+        `reward_max_currency` varchar(255),
+        `reward_min_amount` double precision,
+        `reward_min_currency` varchar(255),
+        `text` varchar(255),
+        `ticker` varchar(255),
+        `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

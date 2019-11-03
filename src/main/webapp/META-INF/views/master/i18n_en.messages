@@ -73,6 +73,7 @@ master.menu.administrator.shutdown = Shut down
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Authenticated
+master.menu.authenticated.offer = Offers
 master.menu.authenticated.requests = Requests
 
 # master.menu.provider ########################################################
