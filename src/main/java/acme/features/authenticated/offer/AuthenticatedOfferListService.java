@@ -15,34 +15,28 @@ import acme.framework.services.AbstractListService;
 @Service
 public class AuthenticatedOfferListService implements AbstractListService<Authenticated, Offer> {
 
-	// Internal state --------------------------------------------------------
-
 	@Autowired
 	AuthenticatedOfferRepository repository;
 
-
-	// AbstractListService<Authenticated, Offer> interface ------------
+	// AbstractListService<Authenticated, Offer> interface -------------------------------------
 
 	@Override
 	public boolean authorise(final Request<Offer> request) {
-		// TODO Auto-generated method stub
 		assert request != null;
 		return true;
 	}
 
 	@Override
 	public void unbind(final Request<Offer> request, final Offer entity, final Model model) {
-		// TODO Auto-generated method stub
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-
-		request.unbind(entity, model, "title", "creation", "deadline");
+    	request.unbind(entity, model, "title", "creation", "deadline");
 	}
 
 	@Override
 	public Collection<Offer> findMany(final Request<Offer> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 
 		Collection<Offer> result;

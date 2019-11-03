@@ -23,7 +23,7 @@
 	<packaging>war</packaging>
 
 	<name>Acme-Jobs</name>
-	<description>This is the Acme Jobs for the students of Design &amp; Testing.</description>
+	<description>This is the proyect Acme Jobs for the students of Design &amp; Testing.</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -49,7 +49,30 @@
 				<configuration>
 					<mainClass>${mainClass}</mainClass>
 				</configuration>					
-			</plugin>			
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.cargo</groupId>
+				<artifactId>cargo-maven2-plugin</artifactId>
+				<version>1.7.6</version>
+				<configuration>
+					<container>
+						<containerId>tomcat9x</containerId>
+						<type>embedded</type>										
+					</container>
+					<configuration>
+						<properties>
+							 <cargo.servlet.port>80</cargo.servlet.port>							 
+						</properties>
+					</configuration>
+					<deployables>
+	                    <deployable>
+	                        <properties>
+	                            <context>/</context>
+	                        </properties>
+	                    </deployable>
+                	</deployables>
+				</configuration>
+			</plugin>
 		</plugins>
 		<resources>
 			<resource>

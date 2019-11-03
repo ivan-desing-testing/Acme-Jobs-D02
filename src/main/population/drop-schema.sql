@@ -23,6 +23,8 @@
 
     drop table if exists `alferez_bulletin`;
 
+    drop table if exists `announcement`;
+
     drop table if exists `anonymous`;
 
     drop table if exists `authenticated`;
@@ -38,6 +40,8 @@
     drop table if exists `offer`;
 
     drop table if exists `provider`;
+
+    drop table if exists `requests`;
 
     drop table if exists `rosado_bulletin`;
 

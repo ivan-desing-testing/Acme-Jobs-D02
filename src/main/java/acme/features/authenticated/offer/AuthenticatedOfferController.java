@@ -13,19 +13,16 @@ import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("authenticated/offer/")
+@RequestMapping("/authenticated/offer/")
 public class AuthenticatedOfferController extends AbstractController<Authenticated, Offer> {
 
-	// Internal state ---------------------------------------------------
+	// Internal state --------------------------------------------------------------------------
 
 	@Autowired
 	private AuthenticatedOfferListService	listService;
 
 	@Autowired
 	private AuthenticatedOfferShowService	showService;
-
-
-	// Constructors -----------------------------------------------------
 
 	@PostConstruct
 	private void initialise() {

@@ -13,11 +13,8 @@ import acme.framework.services.AbstractShowService;
 @Service
 public class AuthenticatedOfferShowService implements AbstractShowService<Authenticated, Offer> {
 
-	// Internal state -----------------------------------------------------
-
 	@Autowired
 	private AuthenticatedOfferRepository repository;
-
 
 	// AbstractShowService<Authenticated, Offer> interface ---------
 
@@ -30,7 +27,7 @@ public class AuthenticatedOfferShowService implements AbstractShowService<Authen
 
 	@Override
 	public void unbind(final Request<Offer> request, final Offer entity, final Model model) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -40,7 +37,7 @@ public class AuthenticatedOfferShowService implements AbstractShowService<Authen
 
 	@Override
 	public Offer findOne(final Request<Offer> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 
 		Offer result;
