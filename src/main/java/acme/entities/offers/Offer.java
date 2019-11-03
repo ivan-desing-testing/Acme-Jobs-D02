@@ -1,15 +1,17 @@
-
 package acme.entities.offers;
-
+import java.util.Date;
+import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.validation.constraints.Email;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.validation.Valid;
+import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
-import org.hibernate.validator.constraints.Range;
-import org.hibernate.validator.constraints.URL;
-
+import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,40 +21,36 @@ import lombok.Setter;
 @Setter
 public class Offer extends DomainEntity {
 
-	// Serialisation identifier -----------------------------------------------
+	//Serialisation identifier ----------------------------------------
 
 	private static final long	serialVersionUID	= 1L;
 
-	// Attributes -------------------------------------------------------------
+	//Attributes ------------------------------------------------------
 
 	@NotBlank
-	private String				companyName;
+	private String				title;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	@Past
+	private Date				creation;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	@Future
+	private Date				deadline;
 
 	@NotBlank
-	private String				sector;
-
-	@NotBlank
-	private String				CEOName;
-
-	@NotBlank
-	private String				activitiesDescription;
-
-	@NotBlank
-	@URL
-	private String				website;
-
-	@NotBlank
-	@Pattern(regexp = "[+]([1-9]|[1-9][0-9]|[1-9][0-9][0-9])[\\s\\S][(]([0-9][0-9][0-9][0-9])[)][\\s\\S]\\d{6,10}")
-	private String				contactPhone;
-
-	@NotBlank
-	@Email
-	private String				contactEmail;
+	private String				text;
 
 	@NotNull
-	private Boolean				incorporated;
+	@Valid
+	private Money				rewardMin;
 
 	@NotNull
-	@Range(min = 0, max = 5)
-	private Double				starScore;
+	@Valid
+	private Money				rewardMax;
+
+	@Pattern(regexp = "^O([A-Z]{4})-([0-9]{5})$")
+	@Column(unique = true)
+	@NotBlank
+	private String				ticker;
 }

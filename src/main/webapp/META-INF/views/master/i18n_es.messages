@@ -12,7 +12,7 @@
 
 master.banner.background = #3F51B5
 
-﻿# master.welcome ##############################################################
+# master.welcome ##############################################################
 
 master.welcome.title = ¡Bienvenidos!
 master.welcome.text = \
@@ -53,16 +53,20 @@ master.menu.anonymous.escobar-bulletin.list = Lista de EscobarBulletins
 master.menu.anonymous.escobar-bulletin.create = Nuevo EscobarBulletin
 
 # master.menu.authenticated ###################################################
-
-master.menu.authenticated = Autenticado
-master.menu.authenticated.announcement = Anuncios
-master.menu.authenticated.challenge= Desafios
+master.menu.authenticated= Autentificado
+master.menu.authenticated.announcement.list= Anuncios
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Autenticado
+master.menu.authenticated.offer = Ofertas
+master.menu.authenticated.requests = Peticiones
 
 # master.menu.provider ########################################################
 
@@ -83,9 +87,7 @@ master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
 
-
-
-﻿# master.footer ###############################################################
+# master.footer ###############################################################
 
 master.footer.title.about = Nosotros
 master.footer.label.company = La empresa

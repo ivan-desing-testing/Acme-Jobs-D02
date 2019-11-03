@@ -4,8 +4,63 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
+      <x>462</x>
+      <y>469</y>
+      <w>224</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Offer
+--
++ title: String {NotNull}
++ creation: Date {Temporal(DATE), Past}
++ deadline: Date {Temporal(DATE), Future}
++ text: String {NotNull}
++ rewardMin: Money {NotNull, Valid}
++ rewardMax: Money {NotNull, Valid}
++ ticker: String {Unique, NotNull}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+
+      <x>245</x>
+      <y>350</y>
+      <w>147</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+ChellikBulletin
+--
++nombre: String{NotBlank}
++apellido: String{NotBlank}
++role: String{NotBlank}
++fecha: Date{Temporal(TIMESTAMP)}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>448</y>
+      <w>140</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+RosadoBulletin
+--
++name: String {NotBlank}
++image: String {URL}
++video: String {URL}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
       <x>518</x>
-      <y>203</y>
+      <y>168</y>
       <w>168</w>
       <h>42</h>
     </coordinates>
@@ -19,7 +74,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>539</x>
-      <y>238</y>
+      <y>203</y>
       <w>70</w>
       <h>77</h>
     </coordinates>
@@ -30,7 +85,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>168</x>
-      <y>133</y>
+      <y>98</y>
       <w>154</w>
       <h>84</h>
     </coordinates>
@@ -50,7 +105,7 @@ bg=orange
     <id>UMLNote</id>
     <coordinates>
       <x>168</x>
-      <y>70</y>
+      <y>35</y>
       <w>168</w>
       <h>42</h>
     </coordinates>
@@ -63,7 +118,7 @@ bg=blue</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>238</x>
-      <y>105</y>
+      <y>70</y>
       <w>21</w>
       <h>42</h>
     </coordinates>
@@ -75,7 +130,7 @@ bg=blue</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>588</x>
-      <y>238</y>
+      <y>203</y>
       <w>70</w>
       <h>77</h>
     </coordinates>
@@ -86,7 +141,7 @@ bg=blue</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>763</x>
-      <y>210</y>
+      <y>175</y>
       <w>70</w>
       <h>42</h>
     </coordinates>
@@ -101,7 +156,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>763</x>
-      <y>154</y>
+      <y>119</y>
       <w>70</w>
       <h>42</h>
     </coordinates>
@@ -116,7 +171,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>763</x>
-      <y>259</y>
+      <y>224</y>
       <w>70</w>
       <h>42</h>
     </coordinates>
@@ -131,7 +186,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>679</x>
-      <y>182</y>
+      <y>147</y>
       <w>98</w>
       <h>56</h>
     </coordinates>
@@ -142,7 +197,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>679</x>
-      <y>217</y>
+      <y>182</y>
       <w>98</w>
       <h>21</h>
     </coordinates>
@@ -153,7 +208,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>679</x>
-      <y>217</y>
+      <y>182</y>
       <w>98</w>
       <h>63</h>
     </coordinates>
@@ -164,7 +219,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>168</x>
-      <y>231</y>
+      <y>196</y>
       <w>154</w>
       <h>49</h>
     </coordinates>
@@ -180,7 +235,7 @@ bg=orange</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>441</x>
-      <y>301</y>
+      <y>266</y>
       <w>140</w>
       <h>63</h>
     </coordinates>
@@ -195,7 +250,7 @@ Provider
     <id>UMLClass</id>
     <coordinates>
       <x>602</x>
-      <y>301</y>
+      <y>266</y>
       <w>147</w>
       <h>63</h>
     </coordinates>
@@ -210,7 +265,7 @@ Consumer
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>133</y>
+      <y>98</y>
       <w>154</w>
       <h>56</h>
     </coordinates>
@@ -227,7 +282,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>203</y>
+      <y>168</y>
       <w>154</w>
       <h>91</h>
     </coordinates>
@@ -247,7 +302,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>308</y>
+      <y>273</y>
       <w>154</w>
       <h>63</h>
     </coordinates>
@@ -264,7 +319,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>476</x>
-      <y>35</y>
+      <y>0</y>
       <w>238</w>
       <h>91</h>
     </coordinates>
@@ -286,7 +341,7 @@ UserAccount
     <id>Relation</id>
     <coordinates>
       <x>595</x>
-      <y>119</y>
+      <y>84</y>
       <w>49</w>
       <h>98</h>
     </coordinates>
@@ -299,8 +354,27 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
+
+      <x>189</x>
+      <y>266</y>
+      <w>224</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Shout
+--
++ moment: Date {Temporal(TIMESTAMP), Past}
++ author: String {NotBlank}
++ text: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
       <x>0</x>
-      <y>385</y>
+
+      <y>350</y>
       <w>189</w>
       <h>133</h>
     </coordinates>
@@ -322,37 +396,60 @@ bg=pink</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>252</x>
-      <y>399</y>
-      <w>175</w>
-      <h>140</h>
+
+      <x>0</x>
+      <y>350</y>
+      <w>224</w>
+      <h>77</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Announcement
+CardenasBulletin
 --
-+title: String {NotBlank}
-+moment: Date{Temporal(TIMESTAMP), Past}
-+moreInfo: String{URL}
-+text: String{NotBlank} 
-</panel_attributes>
++ book: String {NotBlank}
++ author: String {NotBlank}
++ genre:String {Not Blank}
++ isbn: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
+      <x>161</x>
+      <y>462</y>
+      <w>224</w>
+      <h>91</h>
+
       <x>336</x>
-      <y>133</y>
+      <y>140</y>
       <w>161</w>
-      <h>147</h>
+      <h>70</h>
+
     </coordinates>
-    <panel_attributes>Challenges
+    <panel_attributes>Announcement
+--
++ title: String{NotBlank}
++ moment: Date{Temporal(TIME)}
++ moreInfo: String{URL}
++ text: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>686</x>
+      <y>343</y>
+      <w>224</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Requests
 --
 + title: String {NotBlank}
++ creation: Date {Temporal(TIMESTAMP), Past}
 + deadline: Date {Temporal(TIMESTAMP), Future}
-+ description: String {NotBlank}
-+ reward: String {NotBlank}
-+ goal: String {NotBlank}
-/rewardGoal: String{Transient}</panel_attributes>
++ text: String {NotBlank}
++ reward: Money {NotNull, Valid}
++ ticker: String {Unique, NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

@@ -20,104 +20,126 @@
 	<!-- Offers -->
 	
 	<bean id="offer01" class="acme.entities.offers.Offer">
-		<property name="companyName" value="Acme-Jobs"/>
-		<property name="sector" value="Services"/>
-		<property name="CEOName" value="Rafael Corchuelo Gil"/>
-		<property name="activitiesDescription" value="Dedicated to help you find your desired job"/>
-		<property name="website" value="http://www.lsi.us.es/"/>
-		<property name="contactPhone" value="+42 (4201) 123456789"/>
-		<property name="contactEmail" value="rafaelcorchuelo@us.es"/>
-		<property name="incorporated" value="1"/>
-		<property name="starScore" value="5"/>
+		<property name="title" value="Offer 01"/>
+		<property name="creation" value="2019/06/10 10:35"/>
+		<property name="deadline" value="2021/06/11 00:00"/>
+		<property name="text" value="This is the description of an offer"/>
+		<property name="rewardMin">
+			<ref bean="money02"/>
+		</property>
+		<property name="rewardMax">
+			<ref bean="money01"/>
+		</property>
+		<property name="ticker" value="OAAAA-00000"/>
 	</bean>
 	
 	<bean id="offer02" class="acme.entities.offers.Offer">
-		<property name="companyName" value="Astiglass"/>
-		<property name="sector" value="Vidrio"/>
-		<property name="CEOName" value="Lorenzo Aliaga"/>
-		<property name="activitiesDescription" value="50 años de experiencia, esfuerzo e innovación, logran un aumento de la productividad y de la calidad de nuestros productos, situando actualmente a ASTIGLASS en un referente en el sector del vidrio."/>
-		<property name="website" value="http://www.astiglass.com/"/>
-		<property name="contactPhone" value="+42 (4201) 955901234"/>
-		<property name="contactEmail" value="info@astiglass.com"/>
-		<property name="incorporated" value="1"/>
-		<property name="starScore" value="4.5"/>
+		<property name="title" value="Offer 02"/>
+		<property name="creation" value="2017/03/27 14:58"/>
+		<property name="deadline" value="2021/10/06 00:00"/>
+		<property name="text" value="This is the description of another offer"/>
+		<property name="rewardMin">
+			<ref bean="money02"/>
+		</property>
+		<property name="rewardMax">
+			<ref bean="money03"/>
+		</property>
+		<property name="ticker" value="OAAAB-00001"/>
 	</bean>
 	
 	<bean id="offer03" class="acme.entities.offers.Offer">
-		<property name="companyName" value="Startup company"/>
-		<property name="sector" value="Robotics"/>
-		<property name="CEOName" value="John Smith"/>
-		<property name="activitiesDescription" value="Brand new company dedicated to artificial intelligence and robotics"/>
-		<property name="website" value="https://www.enterprisedigi.com/artificial-intelligence-machine-learning"/>
-		<property name="contactPhone" value="+20 (0012) 7561234"/>
-		<property name="contactEmail" value="startupcompany@gmail.com"/>
-		<property name="incorporated" value="0"/>
-		<property name="starScore" value="2.5"/>
+		<property name="title" value="Offer 03"/>
+		<property name="creation" value="2018/12/31 23:13"/>
+		<property name="deadline" value="2021/01/01 00:00"/>
+		<property name="text" value="This is the description of the third offer"/>
+		<property name="rewardMin">
+			<ref bean="money01"/>
+		</property>
+		<property name="rewardMax">
+			<ref bean="money03"/>
+		</property>
+		<property name="ticker" value="OAAAC-00002"/>
 	</bean>
 	
-   <bean id="announcement01" class="acme.entities.announcements.Announcement">
-		<property name="title" value="Sample announcement 01"/>
-		<property name="moment" value="2019/06/10  10:22"/>
-		<property name="moreInfo" value="http://www.example.com" />
-		<property name="text" value=" my text"/>
+	<!-- Money -->
+	
+	<bean id="money01" class="acme.framework.datatypes.Money">
+		<property name="amount" value="1000.00"/>
+		<property name="currency" value="€"/>
 	</bean>
+	
+	<bean id="money02" class="acme.framework.datatypes.Money">
+		<property name="amount" value="850.00"/>
+		<property name="currency" value="€"/>
+	</bean>
+	
+	<bean id="money03" class="acme.framework.datatypes.Money">
+		<property name="amount" value="1200.00"/>
+		<property name="currency" value="€"/>
+	</bean>
+  
+	<!-- ChellikBulletins -->
+  
+	<bean id="chellikBulletin21" class ="acme.entities.chellikBulletin.ChellikBulletin">
+		<property name ="nombre" value="Pipito"/>
+		<property name ="apellido" value="mmmmmmm"/>
+		<property name ="role" value="developer"/>
+		<property name ="fecha" value="2019/08/01 00:00"/>
+	
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 01"/>
+		<property name="moment" value="2019/06/10 10:35"/>
+		<property name="moreInfo"><null/></property>
+		<property name="text" value="This is the description of a simple announcement"/>
+	</bean>
+	
 	<bean id="announcement02" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 02"/>
-		<property name="moment" value="2012/11/11  00:22"/>
-		<property name="moreInfo" value="http://www.example.com"/>
-		<property name="text" value=" my text"/>
+		<property name="moment" value="2019/06/10 00:00"/>
+		<property name="moreInfo" value="http://www.expample.com"/>
+		<property name="text" value="This is a description of another announcement"/>
 	</bean>
+	
 	<bean id="announcement03" class="acme.entities.announcements.Announcement">
-		<property name="title" value="Sample announcement 03"/>
-		<property name="moment" value="2019/11/01  11:22"/>
-		<property name="moreInfo" value="http://www.example.com"/> 
-		<property name="text" value="my text"/>
+		<property name="title" value="Sample very old announcement 03"/>
+		<property name="moment" value="1900/10/10 19:10"/>
+		<property name="moreInfo" value="http://www.expample.com"/>
+		<property name="text" value="This is a very old announcement"/>
 	</bean>
-	<bean id="announcement04" class="acme.entities.announcements.Announcement">
-		<property name="title" value="Sample announcement 03"/>
-		<property name="moment" value="2019/11/01  11:22"/>
-		<property name="moreInfo" value="http://www.example.com"/> 
-		<property name="text" value="my text"/>
+  
+  <!-- Requests -->
+	
+	<bean id="request01" class="acme.entities.requests.Requests">
+		<property name="title" value="Request 01"/>
+		<property name="creation" value="2019/06/10 10:35"/>
+		<property name="deadline" value="2021/06/11 00:00"/>
+		<property name="text" value="This is the description of a request"/>
+		<property name="reward">
+			<ref bean="money01"/>
+		</property>
+		<property name="ticker" value="RAAAA-00000"/>
 	</bean>
 	
-		<bean id="announcement05" class="acme.entities.announcements.Announcement">
-		<property name="title" value="Sample announcement 03"/>
-		<property name="moment" value="2019/10/29  11:22"/>
-		<property name="moreInfo" value="http://www.example.com"/> 
-		<property name="text" value="my text"/>
+	<bean id="request02" class="acme.entities.requests.Requests">
+		<property name="title" value="Request 02"/>
+		<property name="creation" value="2017/03/27 14:58"/>
+		<property name="deadline" value="2021/10/06 00:00"/>
+		<property name="text" value="This is the description of another request"/>
+		<property name="reward">
+			<ref bean="money02"/>
+		</property>
+		<property name="ticker" value="RAAAB-00001"/>
 	</bean>
 	
-	
-	<bean id="Challenge01" class="acme.entities.challenges.Challenge">
-		<property name="title" value="Sample challenge 03"/>
-		<property name="deadline" value="2019/11/29  11:22"/>
-		<property name="description" value="my description"/> 
-		<property name="reward" value='Oro'/>
-		<property name="goal" value='1'/>
+	<bean id="request03" class="acme.entities.requests.Requests">
+		<property name="title" value="Request 03"/>
+		<property name="creation" value="2018/12/31 23:13"/>
+		<property name="deadline" value="2021/01/01 00:00"/>
+		<property name="text" value="This is the description of the third request"/>
+		<property name="reward">
+			<ref bean="money03"/>
+		</property>
+		<property name="ticker" value="RAAAC-00002"/>
 	</bean>
 	
-		<bean id="Challenge02" class="acme.entities.challenges.Challenge">
-		<property name="title" value="Sample challenge 03"/>
-		<property name="deadline" value="2019/11/15  10:22"/>
-		<property name="description" value="my description number 2"/> 
-		<property name="reward" value='Plata'/>
-		<property name="goal" value='2'/>
-	</bean>
-	
-		<bean id="Challenge03" class="acme.entities.challenges.Challenge">
-		<property name="title" value="Sample challenge 03"/>
-		<property name="deadline" value="2019/11/12  11:22"/>
-		<property name="description" value="my description number 03"/> 
-		<property name="reward" value='Bronz'/>
-		<property name="goal" value='3'/>
-	</bean>
-	
-		<bean id="Challenge04" class="acme.entities.challenges.Challenge">
-		<property name="title" value="Sample challenge 03"/>
-		<property name="deadline" value="2019/11/30   23:22"/>
-		<property name="description" value="my description number 04"/> 
-		<property name="reward" value='Oro'/>
-		<property name="goal" value='1'/>
-	</bean>
-
 </beans>

@@ -19,11 +19,11 @@
 <tiles-definitions>
 	
 	<definition name="authenticated/offer/list" extends="master">
-		<put-attribute name="body" type="template" value="../authenticated/offer/list.jsp" />
+		<put-attribute name="body" type="template" value="../authenticated/offer/list.jsp"/>
 	</definition>
 	
 	<definition name="authenticated/offer/form" extends="master">
-		<put-attribute name="body" type="template" value="../authenticated/offer/form.jsp" />
+		<put-attribute name="body" type="template" value="../authenticated/offer/form.jsp"/>
 	</definition>
 	
 </tiles-definitions>
