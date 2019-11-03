@@ -1,34 +1,34 @@
 
-package acme.features.authenticated.announcement;
+package acme.features.authenticated.challenge;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.announcements.Announcement;
+import acme.entities.challenges.Challenge;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedAnnouncementShowService implements AbstractShowService<Authenticated, Announcement> {
+public class AuthenticatedChallengeShowService implements AbstractShowService<Authenticated, Challenge> {
 
 	@Autowired
-	private AuthenticatedAnnouncementRepository repository;
+	private AuthenticatedChallengeRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Announcement> request) {
+	public boolean authorise(final Request<Challenge> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public Announcement findOne(final Request<Announcement> request) {
+	public Challenge findOne(final Request<Challenge> request) {
 
 		assert request != null;
-		Announcement result;
+		Challenge result;
 		int id;
 		id = request.getModel().getInteger("id");
 		result = this.repository.findOneById(id);
@@ -37,12 +37,12 @@ public class AuthenticatedAnnouncementShowService implements AbstractShowService
 	}
 
 	@Override
-	public void unbind(final Request<Announcement> request, final Announcement entity, final Model model) {
+	public void unbind(final Request<Challenge> request, final Challenge entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment", "moreInfo", "text");
+		request.unbind(entity, model, "title", "deadline", "description", "rewardGoal");
 
 	}
 }

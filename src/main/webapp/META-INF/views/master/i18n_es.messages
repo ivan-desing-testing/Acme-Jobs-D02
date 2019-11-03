@@ -56,6 +56,7 @@ master.menu.anonymous.escobar-bulletin.create = Nuevo EscobarBulletin
 
 master.menu.authenticated = Autenticado
 master.menu.authenticated.announcement = Anuncios
+master.menu.authenticated.challenge= Desafios
 
 # master.menu.administrator ###################################################
 
