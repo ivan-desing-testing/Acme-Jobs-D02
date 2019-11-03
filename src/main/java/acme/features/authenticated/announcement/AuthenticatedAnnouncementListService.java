@@ -20,7 +20,6 @@ public class AuthenticatedAnnouncementListService implements AbstractListService
 	@Autowired
 	AuthenticatedAnnouncementRepository repository;
 
-
 	// AbstractListService<Authenticated, Offer> interface -------------------------------------
 
 	@Override

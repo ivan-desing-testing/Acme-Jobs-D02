@@ -104,19 +104,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `requests` (
-       `id` integer not null,
-        `version` integer not null,
-        `creation` datetime(6),
-        `deadline` datetime(6),
-        `reward_amount` double precision,
-        `reward_currency` varchar(255),
-        `text` varchar(255),
-        `ticker` varchar(255),
-        `title` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `rosado_bulletin` (
        `id` integer not null,
         `version` integer not null,

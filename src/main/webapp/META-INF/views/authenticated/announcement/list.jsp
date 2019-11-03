@@ -1,4 +1,3 @@
-
 <%--
 - list.jsp
 -
@@ -20,5 +19,3 @@
 	<acme:list-column code="authenticated.announcement.list.label.title" path="title"/>
 	<acme:list-column code="authenticated.announcement.list.label.moment" path="moment"/>
 </acme:list>
-
-

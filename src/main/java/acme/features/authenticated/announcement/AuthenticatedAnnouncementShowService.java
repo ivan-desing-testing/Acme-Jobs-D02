@@ -18,7 +18,6 @@ public class AuthenticatedAnnouncementShowService implements AbstractShowService
 	@Autowired
 	private AuthenticatedAnnouncementRepository repository;
 
-
 	// AbstractShowService<Authenticated, Announcement> interface -------------
 
 	@Override
@@ -49,5 +48,4 @@ public class AuthenticatedAnnouncementShowService implements AbstractShowService
 
 		return result;
 	}
-
 }
