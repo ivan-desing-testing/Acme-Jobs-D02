@@ -31,8 +31,6 @@
 
     drop table if exists `cardenas_bulletin`;
 
-    drop table if exists `challenge`;
-
     drop table if exists `chellik_bulletin`;
 
     drop table if exists `consumer`;
@@ -42,6 +40,8 @@
     drop table if exists `offer`;
 
     drop table if exists `provider`;
+
+    drop table if exists `requests`;
 
     drop table if exists `rosado_bulletin`;
 
