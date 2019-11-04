@@ -24,6 +24,16 @@
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
+    
+     create table `investor_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `investing_statement` varchar(255),
+        `investor_name` varchar(255),
+        `sector` varchar(255),
+        `stars` double precision,
+        primary key (`id`)
+    ) engine=InnoDB;
 
     create table `anonymous` (
        `id` integer not null,

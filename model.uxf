@@ -452,4 +452,21 @@ Requests
 + ticker: String {Unique, NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>434</x>
+      <y>476</y>
+      <w>196</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+InvestorRecord
+--
++investorName: String {NotBlank}
++sector: String {NotBlank}
++investingStatement: String {NotBlank}
++stars: Double</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
