@@ -27,7 +27,6 @@ master.menu.sign-out = Salir
 
 # master.menu.anonymous #######################################################
 
-master.menu.anonymous = Anónimo
 master.menu.anonymous.ivan-link = Enlace favorito de Iván
 master.menu.anonymous.alvaro-link = Enlace favorito de Alvaro
 master.menu.anonymous.antonio-link = Enlace favorito de Antonio
@@ -52,9 +51,7 @@ master.menu.anonymous.alferez-bulletin.create = Crear AlferezBulletin
 master.menu.anonymous.escobar-bulletin.list = Lista de EscobarBulletins
 master.menu.anonymous.escobar-bulletin.create = Nuevo EscobarBulletin
 
-# master.menu.authenticated ###################################################
-master.menu.authenticated= Autentificado
-master.menu.authenticated.announcement.list= Anuncios
+master.menu.anonymous.announcement= Anuncios
 
 # master.menu.administrator ###################################################
 
@@ -67,6 +64,9 @@ master.menu.administrator.shutdown = Parar el sistema
 master.menu.authenticated = Autenticado
 master.menu.authenticated.offer = Ofertas
 master.menu.authenticated.requests = Peticiones
+master.menu.authenticated.announcement= Anuncios
+master.menu.authenticated.challenge= Desafio
+
 
 # master.menu.provider ########################################################
 
