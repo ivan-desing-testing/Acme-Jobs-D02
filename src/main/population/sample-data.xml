@@ -181,5 +181,25 @@
 		</property>
 		<property name="ticker" value="RAAAC-00002"/>
 	</bean>
+
+	<bean id="investorRecord01" class ="acme.entities.investorRecords.InvestorRecord">
+		<property name ="investorName" value="Peter Parker"/>
+		<property name ="sector" value="Tourism"/>
+		<property name ="investingStatement" value="I won the lottery"/>
+		<property name ="stars" value="0"/>
+	</bean>
 	
+	<bean id="investorRecord02" class ="acme.entities.investorRecords.InvestorRecord">
+		<property name ="investorName" value="Tony Stark"/>
+		<property name ="sector" value="Technology"/>
+		<property name ="investingStatement" value="I'm an expert in this field"/>
+		<property name ="stars" value="5"/>
+	</bean>
+	
+	<bean id="investorRecord03" class ="acme.entities.investorRecords.InvestorRecord">
+		<property name ="investorName" value="Clark Kent"/>
+		<property name ="sector" value="Construction"/>
+		<property name ="investingStatement" value="I want to diversify my stock"/>
+		<property name ="stars" value="3.5"/>
+	</bean>
 </beans>

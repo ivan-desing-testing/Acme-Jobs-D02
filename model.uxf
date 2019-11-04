@@ -24,6 +24,7 @@ Offer
   <element>
     <id>UMLClass</id>
     <coordinates>
+
       <x>245</x>
       <y>350</y>
       <w>147</w>
@@ -353,6 +354,7 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
+
       <x>189</x>
       <y>266</y>
       <w>224</w>
@@ -369,7 +371,9 @@ Shout
   <element>
     <id>UMLClass</id>
     <coordinates>
+      <x>420</x>
       <x>0</x>
+
       <y>350</y>
       <w>189</w>
       <h>133</h>
@@ -392,6 +396,7 @@ bg=pink</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
+
       <x>0</x>
       <y>350</y>
       <w>224</w>
@@ -404,6 +409,28 @@ CardenasBulletin
 + author: String {NotBlank}
 + genre:String {Not Blank}
 + isbn: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>161</x>
+      <y>462</y>
+      <w>224</w>
+      <h>91</h>
+
+      <x>336</x>
+      <y>140</y>
+      <w>161</w>
+      <h>70</h>
+
+    </coordinates>
+    <panel_attributes>Announcement
+--
++ title: String{NotBlank}
++ moment: Date{Temporal(TIME)}
++ moreInfo: String{URL}
++ text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -428,22 +455,22 @@ Requests
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>329</x>
-      <y>84</y>
-      <w>238</w>
-      <h>140</h>
+      <x>434</x>
+      <y>476</y>
+      <w>196</w>
+      <h>77</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Announcement
+InvestorRecord
 --
-+title: String {NotBlank}
-+moment: Date{Temporal(TIMESTAMP), Past}
-+moreInfo: String{URL}
-+text: String{NotBlank} 
-</panel_attributes>
++investorName: String {NotBlank}
++sector: String {NotBlank}
++investingStatement: String {NotBlank}
++stars: Double</panel_attributes>
     <additional_attributes/>
   </element>
-  <element>
+  
+   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>427</x>
@@ -461,4 +488,5 @@ Announcement
 /rewardGoal: String{Transient}</panel_attributes>
     <additional_attributes/>
   </element>
+  
 </diagram>
