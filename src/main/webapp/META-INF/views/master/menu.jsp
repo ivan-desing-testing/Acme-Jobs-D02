@@ -25,6 +25,9 @@
 			<acme:menu-suboption code="master.menu.anonymous.josescrue-favourite-link" action="https://www.formula1.com"/>
           	<acme:menu-suboption code="master.menu.anonymous.abdel-link" action="https://openclassrooms.com/fr/"/>          	
 			<acme:menu-separator/>			
+			<acme:menu-suboption code="master.menu.anonymous.investorRecord.list" action="/anonymous/investor-record/list"/>			
+			<acme:menu-separator/>
+			<acme:menu-separator/>			
 			<acme:menu-suboption code="master.menu.anonymous.shout.list" action="/anonymous/shout/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.shout.create" action="/anonymous/shout/create"/>			
 			<acme:menu-separator/>
