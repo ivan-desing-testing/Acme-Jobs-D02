@@ -1,5 +1,4 @@
-
-    create table `administrator` (
+   create table `administrator` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
@@ -13,6 +12,26 @@
         `moment` datetime(6),
         `type` varchar(255),
         `url` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `announcement` (
+       `id` integer not null,
+        `version` integer not null,
+        `moment` datetime(6),
+        `more_info` varchar(255),
+        `text` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+    
+     create table `investor_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `investing_statement` varchar(255),
+        `investor_name` varchar(255),
+        `sector` varchar(255),
+        `stars` double precision,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -37,6 +56,21 @@
         `book` varchar(255),
         `genre` varchar(255),
         `isbn` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+    
+    create table `offer` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation` datetime(6),
+        `deadline` datetime(6),
+        `reward_max_amount` double precision,
+        `reward_max_currency` varchar(255),
+        `reward_min_amount` double precision,
+        `reward_min_currency` varchar(255),
+        `text` varchar(255),
+        `ticker` varchar(255),
+        `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -70,13 +104,18 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `investor_record` (
+    create table `offer` (
        `id` integer not null,
         `version` integer not null,
-        `investing_statement` varchar(255),
-        `investor_name` varchar(255),
+        `ceoname` varchar(255),
+        `activities_description` varchar(255),
+        `company_name` varchar(255),
+        `contact_email` varchar(255),
+        `contact_phone` varchar(255),
+        `incorporated` bit,
         `sector` varchar(255),
-        `stars` double precision,
+        `star_score` double precision,
+        `website` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -124,6 +163,9 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+
+    alter table `requests` 
+       add constraint UK_5v1h0kdr8vcps4i9e55k5gnc8 unique (`ticker`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
