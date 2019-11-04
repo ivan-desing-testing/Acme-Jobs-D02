@@ -33,6 +33,8 @@
     drop table if exists `chellik_bulletin`;
 
     drop table if exists `consumer`;
+    
+    drop table if exists `challenge`;
 
     drop table if exists `escobar_bulletin`;
     
