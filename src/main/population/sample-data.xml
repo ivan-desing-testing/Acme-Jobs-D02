@@ -61,6 +61,20 @@
 		<property name="ticker" value="OAAAC-00002"/>
 	</bean>
 	
+	<bean id="offer04" class="acme.entities.offers.Offer">
+		<property name="title" value="Offer 04"/>
+		<property name="creation" value="2018/12/31 23:13"/>
+		<property name="deadline" value="2021/01/01 00:00"/>
+		<property name="text" value="This is the description of the 4th offer"/>
+		<property name="rewardMin">
+			<ref bean="money01"/>
+		</property>
+		<property name="rewardMax">
+			<ref bean="money02"/>
+		</property>
+		<property name="ticker" value="OAAAD-00003"/>
+	</bean>
+	
 	<!-- Money -->
 	
 	<bean id="money01" class="acme.framework.datatypes.Money">
