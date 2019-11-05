@@ -4,7 +4,7 @@
 
 
 <acme:list readonly="true">
-	<acme:list-column code="anonymous.investorRecord.list.label.investorName" path="investorName" />
-	<acme:list-column code="anonymous.investorRecord.list.label.sector" path="sector"  />
-	<acme:list-column code="anonymous.investorRecord.list.label.stars" path="stars"  />
+	<acme:list-column code="anonymous.investorRecord.list.label.investorName" path="investorName" width="20%"/>
+	<acme:list-column code="anonymous.investorRecord.list.label.sector" path="sector" width="40%" />
+	<acme:list-column code="anonymous.investorRecord.list.label.stars" path="stars"  width="40%"/>
 </acme:list>

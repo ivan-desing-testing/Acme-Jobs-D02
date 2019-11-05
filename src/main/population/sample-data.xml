@@ -85,6 +85,7 @@
 		<property name ="apellido" value="mmmmmmm"/>
 		<property name ="role" value="developer"/>
 		<property name ="fecha" value="2019/08/01 00:00"/>
+		</bean>
 	
 	<bean id="announcement01" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 01"/>
@@ -162,4 +163,5 @@
 		<property name ="investingStatement" value="I want to diversify my stock"/>
 		<property name ="stars" value="3.5"/>
 	</bean>
+	
 </beans>

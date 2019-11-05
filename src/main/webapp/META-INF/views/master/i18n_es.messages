@@ -35,6 +35,7 @@ master.menu.anonymous.josescrue-favourite-link = Enlace favorito de José
 master.menu.anonymous.abdel-link = Enlace favorito de Abdel
 
 master.menu.anonymous.investorRecord.list = Registro de Inversores
+master.menu.anonymous.investorRecord.list.top = Registros de Inversores Top
 
 master.menu.anonymous.shout.list = Lista de gritos
 master.menu.anonymous.shout.create = Gritar
