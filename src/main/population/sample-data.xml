@@ -202,4 +202,46 @@
 		<property name ="investingStatement" value="I want to diversify my stock"/>
 		<property name ="stars" value="3.5"/>
 	</bean>
+  
+  <bean id="comBannerr01" class="acme.entities.banners.CommercialBanner">
+		<property name="slogan" value="Just do it"/>
+		<property name="targetURL" value="https://www.nike.com/"/>
+		<property name="creditCard" value="5500000000000004"/>
+		<property name="picture" value="https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/gorfwjchoasrrzr1fggt/calzado-air-max-270-nnTrqDGR.jpg"/>
+	</bean>
+	
+	<bean id="comBannerr02" class="acme.entities.banners.CommercialBanner">
+		<property name="slogan" value="Think different"/>
+		<property name="targetURL" value="https://www.apple.com/"/>
+		<property name="creditCard" value="4111111111111111"/>
+		<property name="picture" value="https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?201606271147"/>
+	</bean>
+	
+	<bean id="comBannerr03" class="acme.entities.banners.CommercialBanner">
+		<property name="slogan" value="Because you're worth it"/>
+		<property name="targetURL" value="https://www.loreal.com/"/>
+		<property name="creditCard" value="340000000000009"/>
+		<property name="picture" value="https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201903/29/00123416412171____6__516x640.jpg"/>
+	</bean>
+	
+	<bean id="nonComBannerr01" class="acme.entities.banners.NonCommercialBanner">
+		<property name="slogan" value="Lovin' Beats Hating'"/>
+		<property name="targetURL" value="https://www.mcdonalds.com/us/en-us.html"/>
+		<property name="jingle" value="I'm Lovin' It"/>
+		<property name="picture" value="http://www.mcdonalds.ie/iehome/food/_jcr_content/genericpagecontent/everything/image.img.png/1548671028500.png"/>
+	</bean>
+	
+	<bean id="nonComBannerr02" class="acme.entities.banners.NonCommercialBanner">
+		<property name="slogan" value="¿Repetimos?"/>
+		<property name="targetURL" value="https://www.danone.es/es/nuestras-marcas/danet"/>
+		<property name="jingle" value="Natillas Danone, lsitas para gustar"/>
+		<property name="picture" value="https://static.ulabox.com/media/112636_xl.jpg"/>
+	</bean>
+	
+	<bean id="nonComBannerr03" class="acme.entities.banners.NonCommercialBanner">
+		<property name="slogan" value="Bic Naranja y Bic Cristal"/>
+		<property name="targetURL" value="https://www.bicworld.com/"/>
+		<property name="jingle" value="Bic cristal escribe normal, bic naranja escribe fino"/>
+		<property name="picture" value="https://cdnb.20m.es/sites/76/2018/09/Una-docena-de-curiosidades-sobre-el-boli-BIC-que-posiblemente-no-sab%C3%ADas-.jpg"/>
+	</bean>
 </beans>
