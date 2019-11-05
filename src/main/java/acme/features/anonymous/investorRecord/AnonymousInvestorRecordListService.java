@@ -15,27 +15,16 @@ import acme.framework.services.AbstractListService;
 @Service
 public class AnonymousInvestorRecordListService implements AbstractListService<Anonymous, InvestorRecord> {
 
-	// Internal state ---------------------------------------------------------
-
 	@Autowired
 	AnonymousInvestorRecordRepository repository;
 
-	// AbstractListService<Administrator,Shout> Interface ---------------------------------------------------------
 
+	// AbstractListService<Authenticated, Offer> interface -------------------------------------
 
 	@Override
 	public boolean authorise(final Request<InvestorRecord> request) {
 		assert request != null;
-
 		return true;
-	}
-
-	@Override
-	public Collection<InvestorRecord> findMany(final Request<InvestorRecord> request) {
-		assert request != null;
-		Collection<InvestorRecord> result;
-		result = this.repository.findManyAll();
-		return result;
 	}
 
 	@Override
@@ -43,8 +32,16 @@ public class AnonymousInvestorRecordListService implements AbstractListService<A
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-
 		request.unbind(entity, model, "investorName", "sector", "stars");
-
 	}
+
+	@Override
+	public Collection<InvestorRecord> findMany(final Request<InvestorRecord> request) {
+
+		assert request != null;
+		Collection<InvestorRecord> result;
+		result = this.repository.findManyAll();
+		return result;
+	}
+
 }

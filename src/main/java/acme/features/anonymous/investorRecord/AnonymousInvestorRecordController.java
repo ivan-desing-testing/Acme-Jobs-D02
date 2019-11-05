@@ -17,18 +17,17 @@ import acme.framework.entities.Anonymous;
 @RequestMapping("/anonymous/investor-record/")
 public class AnonymousInvestorRecordController extends AbstractController<Anonymous, InvestorRecord> {
 
-	// Internal state ---------------------------------------------------------
+	// Internal state --------------------------------------------------------------------------
 
 	@Autowired
 	private AnonymousInvestorRecordListService		listService;
+
 	@Autowired
 	private AnonymousInvestorRecordShowService		showService;
 
 	@Autowired
 	private AnonymousInvestorRecordListTopService	listTopService;
 
-
-	// Constructors -----------------------------------------------------------
 
 	@PostConstruct
 	private void initialise() {
