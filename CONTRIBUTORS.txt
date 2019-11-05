@@ -8,4 +8,10 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+- Iván Cárdenas Meneses  - Manager,Developer   Email: ivacarmen@alum.us.es
+- Álvaro Jesús Alferez Richarte  -  Operator,Developer Email: alvalfric@alum.us.es
+- Antonio Rosado Barrera - Developer      Email: antrosbar@alum.us.es
+- Jose Manuel Escobar Ruesga  - Developer   Email: josescrue@alum.us.es
+- Abdelkader Chellik - Developer   Email: abdche@alum.us.es
+
 - Rafael Corchuelo (corchu@us.es) 

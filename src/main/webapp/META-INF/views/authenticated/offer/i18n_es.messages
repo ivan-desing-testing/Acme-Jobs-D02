@@ -8,24 +8,18 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.offer.form.label.companyName = Nombre Compañia:
-authenticated.offer.form.label.sector = Sector:
-authenticated.offer.form.label.CEOName = Nombre del CEO:
-authenticated.offer.form.label.activitiesDescription = Descripción de las actividades:
-authenticated.offer.form.label.website = Website:
-authenticated.offer.form.label.contactPhone = Teléfono:
-authenticated.offer.form.label.contactEmail = Email:
-authenticated.offer.form.label.incorporated = Incorporada:
-authenticated.offer.form.label.starScore = Valoración:
+authenticated.offer.form.label.title = Título: 
+authenticated.offer.form.label.creation = Fecha de Creación: 
+authenticated.offer.form.label.deadline = Fecha Límite: 
+authenticated.offer.form.label.text = Texto: 
+authenticated.offer.form.label.rewardMin = Recompensa Mínima: 
+authenticated.offer.form.label.rewardMax = Recompensa Máxima: 
+authenticated.offer.form.label.ticker = Ticker: 
+authenticated.offer.form.button.return = Volver
 
-authenticated.offer.list.label.companyName = Nombre Compañia:
-authenticated.offer.list.label.sector = Sector:
-authenticated.offer.list.label.CEOName = Nombre del CEO:
-authenticated.offer.list.label.activitiesDescription = Descripción de las actividades:
-authenticated.offer.list.label.website = Website:
-authenticated.offer.list.label.contactPhone = Teléfono:
-authenticated.offer.list.label.contactEmail = Email:
-authenticated.offer.list.label.starScore = Valoración:
+authenticated.offer.list.label.title = Título
+authenticated.offer.list.label.creation = Fecha de Creación
+authenticated.offer.list.label.deadline = Fecha Límite
 
 authenticated.offer.form.button.create = Registrar
 authenticated.offer.form.button.update = Actualizar

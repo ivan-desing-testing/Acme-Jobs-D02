@@ -12,7 +12,7 @@
 
 master.banner.background = #3F51B5
 
-﻿# master.welcome ##############################################################
+# master.welcome ##############################################################
 
 master.welcome.title = ¡Bienvenidos!
 master.welcome.text = \
@@ -27,12 +27,13 @@ master.menu.sign-out = Salir
 
 # master.menu.anonymous #######################################################
 
-master.menu.anonymous = Anónimo
 master.menu.anonymous.ivan-link = Enlace favorito de Iván
 master.menu.anonymous.alvaro-link = Enlace favorito de Alvaro
 master.menu.anonymous.antonio-link = Enlace favorito de Antonio
 master.menu.anonymous.josescrue-favourite-link = Enlace favorito de José
 master.menu.anonymous.abdel-link = Enlace favorito de Abdel
+
+master.menu.anonymous.investorRecord.list = Registro de Inversores
 
 master.menu.anonymous.shout.list = Lista de gritos
 master.menu.anonymous.shout.create = Gritar
@@ -52,11 +53,22 @@ master.menu.anonymous.alferez-bulletin.create = Crear AlferezBulletin
 master.menu.anonymous.escobar-bulletin.list = Lista de EscobarBulletins
 master.menu.anonymous.escobar-bulletin.create = Nuevo EscobarBulletin
 
+master.menu.anonymous.announcement= Anuncios
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Autenticado
+master.menu.authenticated.offer = Ofertas
+master.menu.authenticated.requests = Peticiones
+master.menu.authenticated.announcement= Anuncios
+master.menu.authenticated.challenge= Desafio
+
 
 # master.menu.provider ########################################################
 
@@ -77,9 +89,7 @@ master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
 
-
-
-﻿# master.footer ###############################################################
+# master.footer ###############################################################
 
 master.footer.title.about = Nosotros
 master.footer.label.company = La empresa

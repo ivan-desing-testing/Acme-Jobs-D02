@@ -1,5 +1,4 @@
-
-    create table `administrator` (
+   create table `administrator` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
@@ -13,6 +12,57 @@
         `moment` datetime(6),
         `type` varchar(255),
         `url` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+    
+     create table `challenge` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `goal` varchar(255),
+        `reward` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+    
+    create table `commercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `credit_card` varchar(255),
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `targeturl` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+    
+    create table `non_commercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `jingle` varchar(255),
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `targeturl` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `announcement` (
+       `id` integer not null,
+        `version` integer not null,
+        `moment` datetime(6),
+        `more_info` varchar(255),
+        `text` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+    
+     create table `investor_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `investing_statement` varchar(255),
+        `investor_name` varchar(255),
+        `sector` varchar(255),
+        `stars` double precision,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -39,6 +89,21 @@
         `isbn` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
+    
+    create table `offer` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation` datetime(6),
+        `deadline` datetime(6),
+        `reward_max_amount` double precision,
+        `reward_max_currency` varchar(255),
+        `reward_min_amount` double precision,
+        `reward_min_currency` varchar(255),
+        `text` varchar(255),
+        `ticker` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
 
     create table `chellik_bulletin` (
        `id` integer not null,
@@ -47,16 +112,6 @@
         `fecha` datetime(6),
         `nombre` varchar(255),
         `role` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `commercial_banner` (
-       `id` integer not null,
-        `version` integer not null,
-        `credit_card` varchar(255),
-        `picture` varchar(255),
-        `slogan` varchar(255),
-        `targeturl` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -77,16 +132,6 @@
         `level` varchar(255),
         `moment` datetime(6),
         `text` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `non_commercial_banner` (
-       `id` integer not null,
-        `version` integer not null,
-        `jingle` varchar(255),
-        `picture` varchar(255),
-        `slogan` varchar(255),
-        `targeturl` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -149,6 +194,9 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+
+    alter table `requests` 
+       add constraint UK_5v1h0kdr8vcps4i9e55k5gnc8 unique (`ticker`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);

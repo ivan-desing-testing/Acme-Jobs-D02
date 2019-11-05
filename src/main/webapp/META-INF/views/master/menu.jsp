@@ -19,11 +19,15 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
+      <acme:menu-suboption code="master.menu.anonymous.announcement" action="/anonymous/announcement/list"/>
+      <acme:menu-suboption code="master.menu.anonymous.investorRecord.list" action="/anonymous/investor-record/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.authenticated.offers" action="/authenticated/offer/form"/>
+	       <acme:menu-suboption code="master.menu.authenticated.announcement" action="/authenticated/announcement/list"/>
+           <acme:menu-suboption code="master.menu.authenticated.requests" action="/authenticated/requests/list"/>
+           <acme:menu-suboption code="master.menu.authenticated.challenge" action="/authenticated/challenge/list"/>
+           <acme:menu-suboption code="master.menu.authenticated.offer" action="/authenticated/offer/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
@@ -56,4 +60,3 @@
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
 	</acme:menu-right>
 </acme:menu-bar>
-

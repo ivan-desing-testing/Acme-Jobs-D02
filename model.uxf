@@ -1,6 +1,93 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
   <zoom_level>7</zoom_level>
+  <element>
+    <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>238</x>
+      <y>280</y>
+      <w>154</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>CommercialBanner
+--
++picture: String {NotBlank, URL}
++slogan: String {NotBlank}
++targetURL: String {NotBlank, URL}
++creditCard: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>245</x>
+      <y>378</y>
+      <w>154</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>NonCommercialBanner
+--
++picture: String {NotBlank, URL}
++slogan: String {NotBlank}
++targetURL: String {NotBlank, URL}
++jingle: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>462</x>
+      <y>469</y>
+      <w>224</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Offer
+--
++ title: String {NotNull}
++ creation: Date {Temporal(DATE), Past}
++ deadline: Date {Temporal(DATE), Future}
++ text: String {NotNull}
++ rewardMin: Money {NotNull, Valid}
++ rewardMax: Money {NotNull, Valid}
++ ticker: String {Unique, NotNull}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+
+      <x>245</x>
+      <y>350</y>
+      <w>147</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+ChellikBulletin
+--
++nombre: String{NotBlank}
++apellido: String{NotBlank}
++role: String{NotBlank}
++fecha: Date{Temporal(TIMESTAMP)}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>448</y>
+      <w>140</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+RosadoBulletin
+--
++name: String {NotBlank}
++image: String {URL}
++video: String {URL}</panel_attributes>
+    <additional_attributes/>
+  </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
@@ -299,7 +386,26 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
+
+      <x>189</x>
+      <y>266</y>
+      <w>224</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Shout
+--
++ moment: Date {Temporal(TIMESTAMP), Past}
++ author: String {NotBlank}
++ text: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
       <x>0</x>
+
       <y>350</y>
       <w>189</w>
       <h>133</h>
@@ -322,33 +428,97 @@ bg=pink</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>238</x>
-      <y>280</y>
-      <w>154</w>
-      <h>70</h>
+
+      <x>0</x>
+      <y>350</y>
+      <w>224</w>
+      <h>77</h>
     </coordinates>
-    <panel_attributes>CommercialBanner
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+CardenasBulletin
 --
-+picture: String {NotBlank, URL}
-+slogan: String {NotBlank}
-+targetURL: String {NotBlank, URL}
-+creditCard: String {NotBlank}</panel_attributes>
++ book: String {NotBlank}
++ author: String {NotBlank}
++ genre:String {Not Blank}
++ isbn: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>245</x>
-      <y>378</y>
-      <w>154</w>
+      <x>161</x>
+      <y>462</y>
+      <w>224</w>
+      <h>91</h>
+
+      <x>336</x>
+      <y>140</y>
+      <w>161</w>
       <h>70</h>
+
     </coordinates>
-    <panel_attributes>NonCommercialBanner
+    <panel_attributes>Announcement
 --
-+picture: String {NotBlank, URL}
-+slogan: String {NotBlank}
-+targetURL: String {NotBlank, URL}
-+jingle: String</panel_attributes>
++ title: String{NotBlank}
++ moment: Date{Temporal(TIME)}
++ moreInfo: String{URL}
++ text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>686</x>
+      <y>343</y>
+      <w>224</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Requests
+--
++ title: String {NotBlank}
++ creation: Date {Temporal(TIMESTAMP), Past}
++ deadline: Date {Temporal(TIMESTAMP), Future}
++ text: String {NotBlank}
++ reward: Money {NotNull, Valid}
++ ticker: String {Unique, NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>434</x>
+      <y>476</y>
+      <w>196</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+InvestorRecord
+--
++investorName: String {NotBlank}
++sector: String {NotBlank}
++investingStatement: String {NotBlank}
++stars: Double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  
+   <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>427</x>
+      <y>343</y>
+      <w>231</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Challenges
+--
++ title: String {NotBlank}
++ deadline: Date {Temporal(TIMESTAMP), Future}
++ description: String {NotBlank}
++ reward: String {NotBlank}
++ goal: String {NotBlank}
+/rewardGoal: String{Transient}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  
 </diagram>

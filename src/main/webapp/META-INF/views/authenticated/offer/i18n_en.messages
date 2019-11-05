@@ -8,24 +8,18 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.offer.form.label.companyName = Company Name:
-authenticated.offer.form.label.sector = Sector:
-authenticated.offer.form.label.CEOName = CEO Name:
-authenticated.offer.form.label.activitiesDescription = Activities Description:
-authenticated.offer.form.label.website = Website:
-authenticated.offer.form.label.contactPhone = Phone:
-authenticated.offer.form.label.contactEmail = Email:
-authenticated.offer.form.label.incorporated = Incorporated:
-authenticated.offer.form.label.starScore = Score:
+authenticated.offer.form.label.title = Title: 
+authenticated.offer.form.label.creation = Creation: 
+authenticated.offer.form.label.deadline = Deadline: 
+authenticated.offer.form.label.text = Text: 
+authenticated.offer.form.label.rewardMin = Minimum Reward: 
+authenticated.offer.form.label.rewardMax = Maximum Reward: 
+authenticated.offer.form.label.ticker = Ticker: 
+authenticated.offer.form.button.return = Return
 
-authenticated.offer.list.label.companyName = Company Name:
-authenticated.offer.list.label.sector = Sector:
-authenticated.offer.list.label.CEOName = CEO Name:
-authenticated.offer.list.label.activitiesDescription = Activities Description:
-authenticated.offer.list.label.website = Website:
-authenticated.offer.list.label.contactPhone = Phone:
-authenticated.offer.list.label.contactEmail = Email:
-authenticated.offer.list.label.starScore = Score:
+authenticated.offer.list.label.title = Title
+authenticated.offer.list.label.creation = Creation
+authenticated.offer.list.label.deadline = Deadline
 
 authenticated.offer.form.button.create = Register
 authenticated.offer.form.button.update = Update

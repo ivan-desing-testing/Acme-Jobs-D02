@@ -16,17 +16,13 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form readonly="true">
-	<acme:form-textbox code="authenticated.offer.form.label.companyName" path="companyName"/>
-	<acme:form-textbox code="authenticated.offer.form.label.sector" path="sector"/>
-	<acme:form-textbox code="authenticated.offer.form.label.CEOName" path="CEOName"/>
-	<acme:form-textarea code="authenticated.offer.form.label.activitiesDescription" path="activitiesDescription"/>		
-	<acme:form-url code="authenticated.offer.form.label.website" path="website"/>		
-	<acme:form-textbox code="authenticated.offer.form.label.contactPhone" path="contactPhone"/>		
-	<acme:form-textbox code="authenticated.offer.form.label.contactEmail" path="contactEmail"/>
-	<acme:form-textbox code="authenticated.offer.form.label.incorporated" path="incorporated"/>
-	<acme:form-double code="authenticated.offer.form.label.starScore" path="starScore"/>				
+	<acme:form-textbox code="authenticated.offer.form.label.title" path="title"/>
+	<acme:form-moment code="authenticated.offer.form.label.creation" path="creation"/>
+	<acme:form-moment code="authenticated.offer.form.label.deadline" path="deadline"/>
+	<acme:form-textarea code="authenticated.offer.form.label.text" path="text"/>
+	<acme:form-money code="authenticated.offer.form.label.rewardMin" path="rewardMin"/>
+	<acme:form-money code="authenticated.offer.form.label.rewardMax" path="rewardMax"/>
+	<acme:form-textbox code="authenticated.offer.form.label.ticker" path="ticker"/>
 	
-	<acme:form-submit code="authenticated.offer.form.button.create" action="/authenticated/offer/create"/>
-	<acme:form-submit code="authenticated.offer.form.button.update" action="/authenticated/offer/update"/>
 	<acme:form-return code="authenticated.offer.form.button.return"/>
 </acme:form>
