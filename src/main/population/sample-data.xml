@@ -244,4 +244,41 @@
 		<property name="jingle" value="Bic cristal escribe normal, bic naranja escribe fino"/>
 		<property name="picture" value="https://cdnb.20m.es/sites/76/2018/09/Una-docena-de-curiosidades-sobre-el-boli-BIC-que-posiblemente-no-sab%C3%ADas-.jpg"/>
 	</bean>
+	
+	<!-- Company Records -->
+	<bean class="acme.entities.company_record.CompanyRecord" id="companyRecord01">
+		<property value="Acme-Jobs" name="companyName"/>
+		<property value="Services" name="sector"/>
+		<property value="Rafael Corchuelo Gil" name="CEOName"/>
+		<property value="Dedicated to help you find your desired job" name="activitiesDescription"/>
+		<property value="http://www.lsi.us.es/" name="website"/>
+		<property value="+42 (4201) 123456789" name="contactPhone"/>
+		<property value="rafaelcorchuelo@us.es" name="contactEmail"/>
+		<property value="1" name="incorporated"/>
+		<property value="5" name="starScore"/>
+	</bean>
+
+	<bean class="acme.entities.company_record.CompanyRecord" id="companyRecord02">
+		<property value="Astiglass" name="companyName"/>
+		<property value="Vidrio" name="sector"/>
+		<property value="Lorenzo Aliaga" name="CEOName"/>
+		<property value="50 años de experiencia, esfuerzo e innovación, logran un aumento de la productividad y de la calidad de nuestros productos, situando actualmente a ASTIGLASS en un referente en el sector del vidrio." name="activitiesDescription"/>
+		<property value="http://www.astiglass.com/" name="website"/>
+		<property value="+42 (4201) 955901234" name="contactPhone"/>
+		<property value="info@astiglass.com" name="contactEmail"/>
+		<property value="1" name="incorporated"/>
+		<property value="4.5" name="starScore"/>
+	</bean>
+
+	<bean class="acme.entities.company_record.CompanyRecord" id="companyRecord03">
+		<property value="Startup company" name="companyName"/>
+		<property value="Robotics" name="sector"/>
+		<property value="John Smith" name="CEOName"/>
+		<property value="Brand new company dedicated to artificial intelligence and robotics" name="activitiesDescription"/>
+		<property value="https://www.enterprisedigi.com/artificial-intelligence-machine-learning" name="website"/>
+		<property value="+20 (0012) 7561234" name="contactPhone"/>
+		<property value="startupcompany@gmail.com" name="contactEmail"/>
+		<property value="0" name="incorporated"/>
+		<property value="2.5" name="starScore"/>
+	</bean>
 </beans>
