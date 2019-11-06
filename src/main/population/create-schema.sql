@@ -1,3 +1,4 @@
+
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -73,11 +74,10 @@
     create table `commercial_banner` (
        `id` integer not null,
         `version` integer not null,
-
         `picture` varchar(255),
         `slogan` varchar(255),
         `targeturl` varchar(255),
-        `credit_card` varchar(255), 
+        `credit_card` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

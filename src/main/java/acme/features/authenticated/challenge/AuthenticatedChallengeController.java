@@ -14,7 +14,7 @@ import acme.framework.entities.Authenticated;
 
 @Controller
 @RequestMapping("/authenticated/challenge/")
-public class AuthenticatedChallengeContoller extends AbstractController<Authenticated, Challenge> {
+public class AuthenticatedChallengeController extends AbstractController<Authenticated, Challenge> {
 
 	@Autowired
 	private AuthenticatedChallengeListService	listService;
