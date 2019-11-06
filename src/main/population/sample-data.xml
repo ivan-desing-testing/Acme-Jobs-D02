@@ -295,5 +295,13 @@
 		<property value="0" name="incorporated"/>
 		<property value="2.5" name="starScore"/>
 	</bean>
+	
+	<!--Costumisation Parameters-->
+	
+	<bean id="customisationParameter01" class="acme.entities.customisationParameters.CustomisationParameter">
+		<property name="spamWordsEn" value="sex, hard core, viagra, cialis, nigeria, you ve won, million dollar"/>
+		<property name="spamWordsEs" value="sexo, extremo, viagra, cialis, nigeria, has ganado, millon de dolares"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
 
 </beans>
