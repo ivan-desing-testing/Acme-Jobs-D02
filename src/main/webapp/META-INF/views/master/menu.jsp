@@ -19,6 +19,9 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
+      <acme:menu-suboption code="master.menu.anonymous.announcement" action="/anonymous/announcement/list"/>
+      <acme:menu-suboption code="master.menu.anonymous.investorRecord.list" action="/anonymous/investor-record/list"/>
+      <acme:menu-suboption code="master.menu.anonymous.investorRecord.list.top" action="/anonymous/investor-record/list-top"/>
 	      <acme:menu-suboption code="master.menu.anonymous.announcement" action="/anonymous/announcement/list"/>
 	      <acme:menu-suboption code="master.menu.authenticated.company-records" action="/anonymous/company-record/list"/>
 	      <acme:menu-suboption code="master.menu.anonymous.investorRecord.list" action="/anonymous/investor-record/list"/>

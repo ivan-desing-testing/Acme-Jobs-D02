@@ -13,23 +13,29 @@ import acme.framework.services.AbstractShowService;
 @Service
 public class AnonymousInvestorRecordShowService implements AbstractShowService<Anonymous, InvestorRecord> {
 
-	// Internal state ---------------------------------------------------------
-
 	@Autowired
-	AnonymousInvestorRecordRepository repository;
-
-	// AbstractListService<Administrator,Shout> Interface ---------------------------------------------------------
+	private AnonymousInvestorRecordRepository repository;
 
 
 	@Override
 	public boolean authorise(final Request<InvestorRecord> request) {
 		assert request != null;
-
 		return true;
 	}
 
 	@Override
+	public void unbind(final Request<InvestorRecord> request, final InvestorRecord entity, final Model model) {
+
+		assert request != null;
+		assert entity != null;
+		assert model != null;
+
+		request.unbind(entity, model, "investorName", "sector", "investingStatement", "stars");
+	}
+
+	@Override
 	public InvestorRecord findOne(final Request<InvestorRecord> request) {
+
 		assert request != null;
 
 		InvestorRecord result;
@@ -40,13 +46,4 @@ public class AnonymousInvestorRecordShowService implements AbstractShowService<A
 		return result;
 	}
 
-	@Override
-	public void unbind(final Request<InvestorRecord> request, final InvestorRecord entity, final Model model) {
-		assert request != null;
-		assert entity != null;
-		assert model != null;
-
-		request.unbind(entity, model, "investorName", "sector", "investingStatement", "stars");
-
-	}
 }

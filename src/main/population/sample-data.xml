@@ -91,7 +91,7 @@
 		<property name="amount" value="1200.00"/>
 		<property name="currency" value="€"/>
 	</bean>
-	
+
   <!-- Announcements -->
     
    <bean id="announcement01" class="acme.entities.announcements.Announcement">
