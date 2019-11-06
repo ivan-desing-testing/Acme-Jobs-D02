@@ -105,6 +105,15 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `customisation_parameter` (
+       `id` integer not null,
+        `version` integer not null,
+        `spam_threshold` double precision,
+        `spam_words_en` varchar(255),
+        `spam_words_es` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `escobar_bulletin` (
        `id` integer not null,
         `version` integer not null,
