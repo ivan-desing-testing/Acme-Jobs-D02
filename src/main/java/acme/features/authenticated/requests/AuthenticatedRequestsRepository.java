@@ -12,10 +12,10 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuthenticatedRequestsRepository extends AbstractRepository {
 
-	@Query("select r from Requests r where r.id = ?1")
+	@Query("select r from Requests r where r.id = ?1 where TIMESTAMPDIFF(DAY, CURRENT_DATE(), deadline)>=0")
 	Requests findOneById(int id);
 
-	@Query("select r from Requests r")
+	@Query("select r from Requests r where TIMESTAMPDIFF(DAY, CURRENT_DATE(), deadline)>=0")
 	Collection<Requests> findManyAll();
 
 }

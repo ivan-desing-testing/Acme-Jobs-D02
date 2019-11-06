@@ -45,7 +45,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "totalNumberOfCompanyRecords");
+		request.unbind(entity, model, "totalNumberOfAnnouncements", "totalNumberOfCompanyRecords", "totalNumberOfInvestorRecords", "mininumRewardOfActiveRequests", "maximumRewardOfActiveRequests", "averageRewardOfActiveRequests",
+			"mininumRewardOfActiveOffers", "maximumRewardOfActiveOffers", "averageRewardOfActiveOffers", "totalNumberOfCompanyRecordsGroupedBySector", "totalNumberOfInvestorRecordsGroupedBySector");
 	}
 
 	@Override
@@ -54,9 +55,17 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		Dashboard result = new Dashboard();
 
-		Integer countNumberOfCompanyRecords = this.repository.countNumberOfCompanyRecords();
-
-		result.setTotalNumberOfCompanyRecords(countNumberOfCompanyRecords);
+		result.setTotalNumberOfAnnouncements(this.repository.countNumberOfAnnouncements());
+		result.setTotalNumberOfCompanyRecords(this.repository.countNumberOfCompanyRecords());
+		result.setTotalNumberOfInvestorRecords(this.repository.countNumberOfInvestorRecords());
+		result.setMininumRewardOfActiveRequests(this.repository.mininumRewardOfActiveRequests());
+		result.setMaximumRewardOfActiveRequests(this.repository.maximumRewardOfActiveRequests());
+		result.setAverageRewardOfActiveRequests(this.repository.averageRewardOfActiveRequests());
+		result.setMininumRewardOfActiveOffers(this.repository.mininumRewardOfActiveOffers());
+		result.setMaximumRewardOfActiveOffers(this.repository.maximumRewardOfActiveOffers());
+		result.setAverageRewardOfActiveOffers(this.repository.averageRewardOfActiveOffers());
+		result.setTotalNumberOfCompanyRecordsGroupedBySector(this.repository.countNumberOfCompanyRecordsGroupedBySector());
+		result.setTotalNumberOfInvestorRecordsGroupedBySector(this.repository.countNumberOfInvestorRecordsGroupedBySector());
 
 		return result;
 	}
