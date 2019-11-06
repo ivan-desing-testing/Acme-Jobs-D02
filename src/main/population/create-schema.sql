@@ -1,4 +1,3 @@
-
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -71,6 +70,32 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `commercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `targeturl` varchar(255),
+        `credit_card` varchar(255), 
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `company_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `ceoname` varchar(255),
+        `activities_description` varchar(255),
+        `company_name` varchar(255),
+        `contact_email` varchar(255),
+        `contact_phone` varchar(255),
+        `incorporated` bit,
+        `sector` varchar(255),
+        `star_score` double precision,
+        `website` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
@@ -98,6 +123,16 @@
         `investor_name` varchar(255),
         `sector` varchar(255),
         `stars` double precision,
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `non_commercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `targeturl` varchar(255),
+        `jingle` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

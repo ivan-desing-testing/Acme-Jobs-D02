@@ -9,13 +9,13 @@
 # they accept any liabilities with respect to them.
 
 authenticated.challenge.list.label.title = Titulo
-authenticated.challenge.list.label.deadline = DeadLine
-authenticated.challenge.list.label.description = Description
+authenticated.challenge.list.label.deadline = Fecha Limite
+authenticated.challenge.list.label.description = Descripcion
 
 
 
-authenticated.challenge.form.label.title = Title
-authenticated.challenge.form.label.deadline = DeadLine
-authenticated.challenge.form.label.description =Description
-authenticated.challenge.form.label.rewardGoal = Reward / Goal
-authenticated.challenge.form.button.return = Return
+authenticated.challenge.form.label.title = Titulo
+authenticated.challenge.form.label.deadline = Fecha Limite
+authenticated.challenge.form.label.description =Descripcion
+authenticated.challenge.form.label.rewardGoal = Recompensa / Gol
+authenticated.challenge.form.button.return = Volver

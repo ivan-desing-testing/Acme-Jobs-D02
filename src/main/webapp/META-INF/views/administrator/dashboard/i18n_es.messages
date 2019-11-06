@@ -8,12 +8,4 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-anonymous.announcement.list.label.moment = Momento
-anonymous.announcement.list.label.title = Titulo
-
-
-anonymous.announcement.form.label.title = Titulo
-anonymous.announcement.form.label.moment = Momento
-anonymous.announcement.form.label.moreInfo = Mas Info
-anonymous.announcement.form.label.text = Texto
-anonymous.announcement.form.button.return = Volver
+administrator.dashboard.form.label.companyRecords = Lista de compañias
