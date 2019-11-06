@@ -12,7 +12,7 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AnonymousCompanyRecordRepository extends AbstractRepository {
 
-	@Query("select cr from CompanyRecord cr where cr.id = ?1 and cr.starScore = 5.0")
+	@Query("select cr from CompanyRecord cr where cr.id = ?1")
 	CompanyRecord findOneById(int id);
 
 	@Query("select cr from CompanyRecord cr where cr.starScore = 5.0")
