@@ -421,4 +421,25 @@ Requests
 + ticker: String {Unique, NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>413</x>
+      <y>462</y>
+      <w>224</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>CompanyRecord
+--
++ companyName: String {NotBlank}
++ sector: String {NotBlank}
++ CEOName: String {NotBlank}
++ activitiesDescription: String {NotBlank}
++ website: String {URL}
++ contactPhone: String {NotBlank}
++ contactEmail: String {NotBlank}
++ incorporated: boolean
++ starScore: Double</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
