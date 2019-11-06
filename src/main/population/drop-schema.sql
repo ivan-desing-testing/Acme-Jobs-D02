@@ -37,6 +37,8 @@
 
     drop table if exists `commercial_banner`;
 
+    drop table if exists `company_record`;
+
     drop table if exists `consumer`;
 
     drop table if exists `escobar_bulletin`;
