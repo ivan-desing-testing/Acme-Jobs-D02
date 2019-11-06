@@ -61,6 +61,20 @@
 		<property name="ticker" value="OAAAC-00002"/>
 	</bean>
 	
+	<bean id="offer04" class="acme.entities.offers.Offer">
+		<property name="title" value="Offer 04"/>
+		<property name="creation" value="2018/12/31 23:13"/>
+		<property name="deadline" value="2021/01/01 00:00"/>
+		<property name="text" value="This is the description of the 4th offer"/>
+		<property name="rewardMin">
+			<ref bean="money01"/>
+		</property>
+		<property name="rewardMax">
+			<ref bean="money02"/>
+		</property>
+		<property name="ticker" value="OAAAD-00003"/>
+	</bean>
+	
 	<!-- Money -->
 	
 	<bean id="money01" class="acme.framework.datatypes.Money">
@@ -188,7 +202,7 @@
 		<property name ="investingStatement" value="I won the lottery"/>
 		<property name ="stars" value="0"/>
 	</bean>
-	
+
 	<bean id="investorRecord02" class ="acme.entities.investorRecords.InvestorRecord">
 		<property name ="investorName" value="Tony Stark"/>
 		<property name ="sector" value="Technology"/>
@@ -244,4 +258,5 @@
 		<property name="jingle" value="Bic cristal escribe normal, bic naranja escribe fino"/>
 		<property name="picture" value="https://cdnb.20m.es/sites/76/2018/09/Una-docena-de-curiosidades-sobre-el-boli-BIC-que-posiblemente-no-sab%C3%ADas-.jpg"/>
 	</bean>
+  
 </beans>

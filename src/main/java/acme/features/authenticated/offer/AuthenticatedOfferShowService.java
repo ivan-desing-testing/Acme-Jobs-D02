@@ -45,6 +45,8 @@ public class AuthenticatedOfferShowService implements AbstractShowService<Authen
 
 		id = request.getModel().getInteger("id");
 		result = this.repository.findOneById(id);
+		
+		assert result.getRewardMin().getAmount() <= result.getRewardMax().getAmount();
 
 		return result;
 	}
