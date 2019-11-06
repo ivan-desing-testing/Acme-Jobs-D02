@@ -322,8 +322,8 @@ bg=pink</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>336</x>
-      <y>140</y>
+      <x>343</x>
+      <y>168</y>
       <w>161</w>
       <h>70</h>
     </coordinates>
@@ -349,6 +349,76 @@ CustomisationParameter
 + spamWordsEn: String
 + spamWordsEs: String
 + spamThreshold: Double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>203</x>
+      <y>427</y>
+      <w>196</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+InvestorRecord
+--
++investorName: String {NotBlank}
++sector: String {NotBlank}
++investingStatement: String {NotBlank}
++stars: Double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>413</x>
+      <y>343</y>
+      <w>231</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Challenge
+--
++ title: String {NotBlank}
++ deadline: Date {Temporal(TIMESTAMP), Future}
++ description: String {NotBlank}
++ reward: String {NotBlank}
++ goal: String {NotBlank}
+/rewardGoal: String{Transient}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>203</x>
+      <y>350</y>
+      <w>154</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>CommercialBanner
+--
++picture: String {NotBlank, URL}
++slogan: String {NotBlank}
++targetURL: String {NotBlank, URL}
++creditCard: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>658</x>
+      <y>343</y>
+      <w>224</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Requests
+--
++ title: String {NotBlank}
++ creation: Date {Temporal(TIMESTAMP), Past}
++ deadline: Date {Temporal(TIMESTAMP), Future}
++ text: String {NotBlank}
++ reward: Money {NotNull, Valid}
++ ticker: String {Unique, NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
