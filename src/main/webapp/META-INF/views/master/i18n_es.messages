@@ -66,8 +66,8 @@ master.menu.administrator.shutdown = Parar el sistema
 
 # master.menu.authenticated ###################################################
 
-master.menu.authenticated.activechallenge= DesafiosActivados
-
+master.menu.authenticated.activechallenge= Desafios Activados
+master.menu.authenticated.investorRecord.list = Registro de Inversores
 
 # master.menu.authenticated ###################################################
 

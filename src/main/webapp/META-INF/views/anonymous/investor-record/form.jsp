@@ -5,7 +5,7 @@
 
 <acme:form readonly="true">
 	<acme:form-textbox code="anonymous.investorRecord.form.label.investorName" path="investorName" />
-	<acme:form-textbox code="anonymous.investorRecord.form.label.setor" path="sector" />
+	<acme:form-textbox code="anonymous.investorRecord.form.label.sector" path="sector" />
 	<acme:form-textarea code="anonymous.investorRecord.form.label.investingStatement" path="investingStatement" />
 	<acme:form-double code="anonymous.investorRecord.form.label.stars" path="stars" />
 	
