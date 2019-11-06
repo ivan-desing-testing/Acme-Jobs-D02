@@ -36,6 +36,7 @@ master.menu.anonymous.josescrue-favourite-link = José's link
 master.menu.anonymous.abdel-link = Abdel's link
 
 master.menu.anonymous.investorRecord.list = Investor Records
+master.menu.anonymous.investorRecord.list.top = Top Investor Records
 
 master.menu.anonymous.shout.list = List Shouts
 master.menu.anonymous.shout.create = Shout!
@@ -62,7 +63,12 @@ master.menu.anonymous.announcement= Announcements
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.dashboard = Dashboard
+master.menu.administrator.customisation-parameter = Customisation Parameters
 master.menu.administrator.shutdown = Shut down
+
+# master.menu.authenticated ###################################################
+master.menu.authenticatedactivechallenge= Actives
+master.menu.authenticatedactivechallenge.activechallenge= ActiveChallenges
 
 # master.menu.authenticated ###################################################
 

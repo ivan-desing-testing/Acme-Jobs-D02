@@ -61,6 +61,20 @@
 		<property name="ticker" value="OAAAC-00002"/>
 	</bean>
 	
+	<bean id="offer04" class="acme.entities.offers.Offer">
+		<property name="title" value="Offer 04"/>
+		<property name="creation" value="2018/12/31 23:13"/>
+		<property name="deadline" value="2021/01/01 00:00"/>
+		<property name="text" value="This is the description of the 4th offer"/>
+		<property name="rewardMin">
+			<ref bean="money01"/>
+		</property>
+		<property name="rewardMax">
+			<ref bean="money02"/>
+		</property>
+		<property name="ticker" value="OAAAD-00003"/>
+	</bean>
+	
 	<!-- Money -->
 	
 	<bean id="money01" class="acme.framework.datatypes.Money">
@@ -77,7 +91,7 @@
 		<property name="amount" value="1200.00"/>
 		<property name="currency" value="€"/>
 	</bean>
-	
+
   <!-- Announcements -->
     
    <bean id="announcement01" class="acme.entities.announcements.Announcement">
@@ -116,7 +130,7 @@
    <!-- Chellenges -->
 	  
 	<bean id="Challenge01" class="acme.entities.challenges.Challenge">
-		<property name="title" value="Sample challenge 03"/>
+		<property name="title" value="Sample challenge 01"/>
 		<property name="deadline" value="2019/11/29  11:22"/>
 		<property name="description" value="my description number 01"/> 
 		<property name="reward" value='Oro'/>
@@ -124,8 +138,8 @@
 	</bean>
 	
 		<bean id="Challenge02" class="acme.entities.challenges.Challenge">
-		<property name="title" value="Sample challenge 03"/>
-		<property name="deadline" value="2019/11/15  10:22"/>
+		<property name="title" value="Sample challenge 02"/>
+		<property name="deadline" value="2019/11/04  10:22"/>
 		<property name="description" value="my description number 02"/> 
 		<property name="reward" value='Plata'/>
 		<property name="goal" value='2'/>
@@ -140,8 +154,22 @@
 	</bean>
 	
 		<bean id="Challenge04" class="acme.entities.challenges.Challenge">
-		<property name="title" value="Sample challenge 03"/>
+		<property name="title" value="Sample challenge 04"/>
 		<property name="deadline" value="2019/11/30   23:22"/>
+		<property name="description" value="my description number 04"/> 
+		<property name="reward" value='Oro'/>
+		<property name="goal" value='1'/>
+	</bean>
+		<bean id="Challenge05" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 05"/>
+		<property name="deadline" value="2019/10/29   23:22"/>
+		<property name="description" value="my description number 04"/> 
+		<property name="reward" value='Oro'/>
+		<property name="goal" value='1'/>
+	</bean>
+		<bean id="Challenge06" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 06"/>
+		<property name="deadline" value="2019/09/29   23:22"/>
 		<property name="description" value="my description number 04"/> 
 		<property name="reward" value='Oro'/>
 		<property name="goal" value='1'/>
@@ -188,7 +216,7 @@
 		<property name ="investingStatement" value="I won the lottery"/>
 		<property name ="stars" value="0"/>
 	</bean>
-	
+
 	<bean id="investorRecord02" class ="acme.entities.investorRecords.InvestorRecord">
 		<property name ="investorName" value="Tony Stark"/>
 		<property name ="sector" value="Technology"/>
@@ -244,7 +272,7 @@
 		<property name="jingle" value="Bic cristal escribe normal, bic naranja escribe fino"/>
 		<property name="picture" value="https://cdnb.20m.es/sites/76/2018/09/Una-docena-de-curiosidades-sobre-el-boli-BIC-que-posiblemente-no-sab%C3%ADas-.jpg"/>
 	</bean>
-	
+
 	<!-- Company Records -->
 	<bean class="acme.entities.company_record.CompanyRecord" id="companyRecord01">
 		<property value="Acme-Jobs" name="companyName"/>
@@ -281,4 +309,13 @@
 		<property value="0" name="incorporated"/>
 		<property value="2.5" name="starScore"/>
 	</bean>
+	
+	<!--Costumisation Parameters-->
+	
+	<bean id="customisationParameter01" class="acme.entities.customisationParameters.CustomisationParameter">
+		<property name="spamWordsEn" value="sex, hard core, viagra, cialis, nigeria, you ve won, million dollar"/>
+		<property name="spamWordsEs" value="sexo, extremo, viagra, cialis, nigeria, has ganado, millon de dolares"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+
 </beans>

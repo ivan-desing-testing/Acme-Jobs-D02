@@ -41,6 +41,8 @@
 
     drop table if exists `consumer`;
 
+    drop table if exists `customisation_parameter`;
+
     drop table if exists `escobar_bulletin`;
 
     drop table if exists `investor_record`;

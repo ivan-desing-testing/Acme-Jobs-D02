@@ -42,6 +42,7 @@ public class AuthenticatedOfferListService implements AbstractListService<Authen
 		Collection<Offer> result;
 
 		result = this.repository.findManyAll();
+		result.removeIf(o -> !(o.getRewardMin().getAmount() <= o.getRewardMax().getAmount()));
 
 		return result;
 	}
