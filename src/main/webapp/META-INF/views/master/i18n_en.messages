@@ -67,6 +67,10 @@ master.menu.administrator.customisation-parameter = Customisation Parameters
 master.menu.administrator.shutdown = Shut down
 
 # master.menu.authenticated ###################################################
+master.menu.authenticatedactivechallenge= Actives
+master.menu.authenticatedactivechallenge.activechallenge= ActiveChallenges
+
+# master.menu.authenticated ###################################################
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.announcement = Announcements

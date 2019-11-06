@@ -66,6 +66,11 @@ master.menu.administrator.shutdown = Parar el sistema
 
 # master.menu.authenticated ###################################################
 
+master.menu.authenticated.activechallenge= DesafiosActivados
+
+
+# master.menu.authenticated ###################################################
+
 master.menu.authenticated = Autenticado
 master.menu.authenticated.offer = Ofertas
 master.menu.authenticated.requests = Peticiones
