@@ -74,10 +74,11 @@
     create table `commercial_banner` (
        `id` integer not null,
         `version` integer not null,
-        `credit_card` varchar(255),
+
         `picture` varchar(255),
         `slogan` varchar(255),
         `targeturl` varchar(255),
+        `credit_card` varchar(255), 
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -129,10 +130,10 @@
     create table `non_commercial_banner` (
        `id` integer not null,
         `version` integer not null,
-        `jingle` varchar(255),
         `picture` varchar(255),
         `slogan` varchar(255),
         `targeturl` varchar(255),
+        `jingle` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
