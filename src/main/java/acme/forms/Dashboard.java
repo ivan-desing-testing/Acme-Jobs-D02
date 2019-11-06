@@ -12,18 +12,22 @@ public class Dashboard implements Serializable {
 
 	// Serialisation identifier --------------
 
-	private static final long serialVersionUID = 1L;
+	private static final long	serialVersionUID	= 1L;
 
 	// Attributes ----------------------------
 
-	//Integer						totalNumberOfAnnouncements;
-	Integer totalNumberOfCompanyRecords;
-	//Integer 						totalNumberOfInvestorRecords;
-	//Double						mininumStandardDeviationOfRewardsOfActiveRequests;
-	//Double						maximumStandardDeviationOfRewardsOfActiveRequests;
-	//Double						averageStandardDeviationOfRewardsOfActiveRequests;
-	//Double						mininumStandardDeviationOfRewardsOfActiverOffers;
-	//Double						maximumStandardDeviationOfRewardsOfActiverOffers;
-	//Double						averageStandardDeviationOfRewardsOfActiverOffers;
+	Integer						totalNumberOfAnnouncements;
+	Integer						totalNumberOfCompanyRecords;
+	Integer						totalNumberOfInvestorRecords;
+	Double						mininumRewardOfActiveRequests;
+	Double						maximumRewardOfActiveRequests;
+	Double						averageRewardOfActiveRequests;
+	Double						standardDeviationOfActiveRequests;
+	Double						mininumRewardOfActiveOffers;
+	Double						maximumRewardOfActiveOffers;
+	Double						averageRewardOfActiveOffers;
+	Double						standardDeviationOfActiveOffers;
+	String[]					totalNumberOfCompanyRecordsGroupedBySector;
+	String[]					totalNumberOfInvestorRecordsGroupedBySector;
 
 }
