@@ -14,6 +14,37 @@
         `url` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
+    
+     create table `challenge` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `goal` varchar(255),
+        `reward` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+    
+    create table `commercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `credit_card` varchar(255),
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `targeturl` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+    
+    create table `non_commercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `jingle` varchar(255),
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `targeturl` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
 
     create table `announcement` (
        `id` integer not null,
@@ -22,6 +53,16 @@
         `more_info` varchar(255),
         `text` varchar(255),
         `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+    
+     create table `investor_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `investing_statement` varchar(255),
+        `investor_name` varchar(255),
+        `sector` varchar(255),
+        `stars` double precision,
         primary key (`id`)
     ) engine=InnoDB;
 

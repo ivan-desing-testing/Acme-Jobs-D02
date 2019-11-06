@@ -12,8 +12,8 @@ anonymous.announcement.list.label.moment = Momento
 anonymous.announcement.list.label.title = Titulo
 
 
-anonymous.announcement.form.label.title = Title
-anonymous.announcement.form.label.moment = Moment
-anonymous.announcement.form.label.moreInfo = More info
-anonymous.announcement.form.label.text = Text
-anonymous.announcement.form.button.return = Return
+anonymous.announcement.form.label.title = Titulo
+anonymous.announcement.form.label.moment = Momento
+anonymous.announcement.form.label.moreInfo = Mas Info
+anonymous.announcement.form.label.text = Texto
+anonymous.announcement.form.button.return = Volver
