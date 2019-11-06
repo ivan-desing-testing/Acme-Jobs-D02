@@ -26,10 +26,6 @@
 	      <acme:menu-suboption code="master.menu.authenticated.company-records" action="/anonymous/company-record/list"/>
 	      <acme:menu-suboption code="master.menu.anonymous.investorRecord.list" action="/anonymous/investor-record/list"/>
 		</acme:menu-option>
-		
-		<acme:menu-option code="master.menu.authenticatedactivechallenge" access="isAuthenticated()">
-	       <acme:menu-suboption code="master.menu.authenticatedactivechallenge.activechallenge" action="/authenticatedactivechallenge/activechallenge/list"/>
-		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 	       <acme:menu-suboption code="master.menu.authenticated.announcement" action="/authenticated/announcement/list"/>

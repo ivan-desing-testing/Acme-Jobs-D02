@@ -12,7 +12,7 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuthenticatedOfferRepository extends AbstractRepository {
 
-	@Query("select o from Offer o where o.id = ?1 where TIMESTAMPDIFF(DAY, CURRENT_DATE(), deadline)>=0")
+	@Query("select o from Offer o where o.id = ?1 and TIMESTAMPDIFF(DAY, CURRENT_DATE(), deadline)>=0")
 	Offer findOneById(int id);
 
 	@Query("select o from Offer o where TIMESTAMPDIFF(DAY, CURRENT_DATE(), deadline)>=0")

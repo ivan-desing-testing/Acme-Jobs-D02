@@ -12,7 +12,7 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuthenticatedChallengeRepository extends AbstractRepository {
 
-	@Query("select a from Challenge a where a.id=?1 where TIMESTAMPDIFF(DAY, CURRENT_DATE(), deadline)>=0")
+	@Query("select a from Challenge a where a.id=?1 and TIMESTAMPDIFF(DAY, CURRENT_DATE(), deadline)>=0")
 	Challenge findOneById(int id);
 
 	@Query("select a from Challenge a where TIMESTAMPDIFF(DAY, CURRENT_DATE(), deadline)>=0")
